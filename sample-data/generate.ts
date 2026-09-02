@@ -14,13 +14,13 @@
  */
 import {
   type AlertRule,
-  calcLoad,
   type DriverProfile,
   type Load,
   matchesRule,
   matchScore,
   PROFILE_DEFAULTS,
-  summarizePlan,
+  searchChains,
+  strategies,
 } from "../supabase/functions/_shared/profit-calc.ts";
 
 // ---------------------------------------------------------------- rng ----
@@ -95,6 +95,9 @@ interface DemoLoad extends Load {
   raw_payload: Record<string, unknown>;
 }
 
+const today = new Date(); today.setUTCHours(0, 0, 0, 0);
+const iso = (offset: number) => new Date(today.getTime() + offset * 86400000).toISOString().slice(0, 10);
+
 const loads: DemoLoad[] = [];
 let seq = 417;
 for (let i = 0; i < 78; i++) {
@@ -135,7 +138,7 @@ for (let i = 0; i < 78; i++) {
     terminal: `${origin} Terminal`,
     origin_city: origin, origin_state: CITIES[origin][0],
     dest_city: dest, dest_state: CITIES[dest][0],
-    load_date: null, day_offset: dayOffset,
+    load_date: iso(dayOffset), day_offset: dayOffset,
     miles, deadhead_miles: deadhead, towable,
     pay, est_days: estDays,
     return_cost_estimate: returnCost,
@@ -165,7 +168,7 @@ const drivers: DemoDriver[] = [
       mpg: 9.5, fuel_type: "diesel", hotel_budget: 95, food_budget: 45, transport_budget: 200, max_expense_per_load: 650,
       max_weekly_expense: 1400, min_net_per_day: 750, min_net_per_load: 400, min_net_per_mile: 0.75, max_deadhead_pct: 15,
       preferred_min_miles: 250, preferred_max_miles: 900 },
-    goal: { id: uuid(), weekly_net_goal: 3200, days_available: 5 },
+    goal: { id: uuid(), weekly_net_goal: 3000, days_available: 4 },   // the worked example from the brief
     rules: [
       { id: uuid(), rule_type: "pay_per_mile", params: { min_pay_per_mile: 2.75 } },
       { id: uuid(), rule_type: "backhaul_available", params: {} },
@@ -219,40 +222,22 @@ for (const d of drivers) {
 // -------------------------------------------------------- saved plans ----
 interface Plan { id: string; driver_id: string; name: string; load_ids: string[]; projected_net: number; projected_expenses: number; days_used: number }
 const plans: Plan[] = [];
-function bestChain(d: DemoDriver, name: string, maxLoads: number, wantHome: boolean): Plan | null {
-  const homeState = d.profile.starting_location.slice(-2);
-  const avail = loads.filter((l) => l.status === "available" && matchScore(l, d.profile).score >= 60);
-  const npd = (l: DemoLoad) => calcLoad(l, d.profile).netPerDay;
-  // Depth-first over the top few candidates at each hop: start at home, end at
-  // home when wantHome, dates strictly increasing.
-  const search = (at: string, day: number, chain: DemoLoad[]): DemoLoad[] | null => {
-    if (chain.length === maxLoads) return !wantHome || at === homeState ? chain : null;
-    const cands = avail
-      .filter((l) => l.origin_state === at && l.day_offset > day && !chain.includes(l))
-      .sort((a, b) => npd(b) - npd(a))
-      .slice(0, 6);
-    let best: DemoLoad[] | null = null;
-    for (const next of cands) {
-      const found = search(next.dest_state, next.day_offset + Math.ceil(next.est_days), [...chain, next]);
-      if (found && (!best || summarizePlan(found, d.profile).projectedNet > summarizePlan(best, d.profile).projectedNet)) best = found;
-    }
-    if (best) return best;
-    // Could not fill every hop: accept a shorter chain that still ends at home.
-    return chain.length && (!wantHome || at === homeState) ? chain : null;
-  };
-  const chain = search(homeState, -1, []);
-  if (!chain?.length) return null;
-  const s = summarizePlan(chain, d.profile, d.goal);
-  return { id: uuid(), driver_id: d.id, name, load_ids: chain.map((l) => l.id), projected_net: s.projectedNet, projected_expenses: s.projectedExpenses, days_used: s.daysUsed };
-}
+// Saved plans come straight from the shared strategy engine, so the seed shows
+// exactly what the app's Strategies panel would propose.
 for (const d of drivers) {
-  const a = bestChain(d, "This week — out and back", 2, true); if (a) plans.push(a);
-  const b = bestChain(d, "Long run", 3, false); if (b && b.load_ids.join() !== a?.load_ids.join()) plans.push(b);
+  const chains = searchChains(loads.filter((l) => l.status === "available"), d.profile, { homeState: d.profile.starting_location.slice(-2), maxDays: 7 });
+  const seen = new Set<string>();
+  for (const s of strategies(chains, d.profile, d.goal)) {
+    if (!s.chain) continue;
+    const ids = s.chain.loads.map((l) => (l as DemoLoad).id);
+    if (seen.has(ids.join())) continue;
+    seen.add(ids.join());
+    const sm = s.chain.summary;
+    plans.push({ id: uuid(), driver_id: d.id, name: s.label, load_ids: ids, projected_net: sm.projectedNet, projected_expenses: sm.projectedExpenses, days_used: sm.daysUsed });
+  }
 }
 
 // --------------------------------------------------------------- emit ----
-const today = new Date(); today.setUTCHours(0, 0, 0, 0);
-const iso = (offset: number) => new Date(today.getTime() + offset * 86400000).toISOString().slice(0, 10);
 const q = (v: unknown): string => {
   if (v === null || v === undefined) return "null";
   if (typeof v === "number" || typeof v === "boolean") return String(v);
@@ -293,6 +278,7 @@ ${drivers.map((d) => {
   return `update public.driver_profiles set
   display_name=${q(p.display_name)}, starting_location=${q(p.starting_location)}, cdl_class=${q(p.cdl_class)}, towable=${p.towable},
   mpg=${p.mpg}, fuel_type=${q(p.fuel_type)}, hotel_budget=${p.hotel_budget}, food_budget=${p.food_budget}, transport_budget=${p.transport_budget},
+  toll_per_mile=${p.toll_per_mile}, other_per_load=${p.other_per_load},
   max_expense_per_load=${p.max_expense_per_load}, max_weekly_expense=${p.max_weekly_expense}, min_net_per_day=${p.min_net_per_day},
   min_net_per_load=${p.min_net_per_load}, min_net_per_mile=${p.min_net_per_mile}, max_deadhead_pct=${p.max_deadhead_pct},
   preferred_min_miles=${p.preferred_min_miles}, preferred_max_miles=${p.preferred_max_miles}
@@ -330,7 +316,7 @@ commit;
 
 await Deno.writeTextFile("../supabase/seed.sql", sql);
 
-const loadsJson = loads.map(({ day_offset, ...l }) => ({ ...l, load_date: iso(day_offset), day_offset }));
+const loadsJson = loads;
 await Deno.writeTextFile("loads.json", JSON.stringify(loadsJson, null, 2) + "\n");
 
 await Deno.writeTextFile("drivers.json", JSON.stringify(drivers.map((d) => ({
@@ -355,7 +341,7 @@ await Deno.writeTextFile("terminal-board.csv", [csvHeader, ...csvRows].map((r) =
 console.log(`loads: ${loads.length} (${loads.filter((l) => l.status === "available").length} available, ${loads.filter((l) => l.is_backhaul).length} backhauls, ${loads.filter((l) => l.source === "csv").length} in CSV)`);
 for (const d of drivers) {
   const scores = loads.filter((l) => l.status === "available").map((l) => matchScore(l, d.profile));
-  const good = scores.filter((s) => s.score >= 70).length, over = scores.filter((s) => s.flags.includes("OVER_BUDGET")).length;
-  console.log(`${d.profile.display_name.padEnd(14)} hits=${hits.filter((h) => h.driver_id === d.id).length}  plans=${plans.filter((p) => p.driver_id === d.id).length}  loads>=70: ${good}  over-budget: ${over}`);
+  const tiers = scores.reduce<Record<string, number>>((acc, s) => ((acc[s.tier] = (acc[s.tier] ?? 0) + 1), acc), {});
+  console.log(`${d.profile.display_name.padEnd(14)} hits=${hits.filter((h) => h.driver_id === d.id).length}  plans=${plans.filter((p) => p.driver_id === d.id).length}  ${JSON.stringify(tiers)}`);
   for (const p of plans.filter((p) => p.driver_id === d.id)) console.log(`   ${p.name}: ${p.load_ids.length} loads, net $${p.projected_net}, ${p.days_used} days`);
 }

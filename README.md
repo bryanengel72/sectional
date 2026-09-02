@@ -34,9 +34,22 @@ supabase/
 ## Demo client (localhost)
 
 `web/` is a small Vite + TypeScript client that runs the whole MVP on the
-generated fixtures with no backend: load board with match scores and expense
-receipts, the week-as-highway plan builder, alerts inbox, live settings, and a
-CSV import that runs the same normalizer and alert rules the Edge Functions use.
+generated fixtures with no backend. It follows the product brief's dashboard:
+
+- **Goal strip**: weekly goal, days out, required net/day, projected net and
+  expenses, goal status.
+- **1–7 day profit planner**: for each number of days out, the best route from
+  home and whether it clears the goal; the fewest days that do is recommended.
+  The chosen plan is drawn along the road above the day columns.
+- **Strategies**: Option A maximum net, B lowest cost that still clears the
+  goal, C best balance. Strategies that land on the same route collapse into
+  one card.
+- **Top recommended loads** and a load board with the Profit Match Score and
+  its tier (Top pick / Good / Review / Over budget / Low net). Opening a load
+  shows the expense receipt, the score broken down by factor, and the
+  profitable next loads picking up near its destination.
+- Plan builder, alerts inbox, live settings, and a CSV import that runs the
+  same normalizer and alert rules the Edge Functions use.
 
 ```bash
 cd web && npm install && npm run dev      # http://localhost:5180
@@ -66,7 +79,7 @@ Demo logins (password `sectional-demo` for all):
 
 | Driver | Home | Setup | Shows off |
 |---|---|---|---|
-| marcus@sectional.demo | Kansas City, MO | CDL-A, tows | The full picture: pay/mile alerts, backhaul alerts, goal-completable alerts, Pro subscription |
+| marcus@sectional.demo | Kansas City, MO | CDL-A, tows | The brief's worked example ($3,000 in 4 days): planner recommends 4 days, goal met. Pay/mile, backhaul, and goal alerts, Pro subscription |
 | dee@sectional.demo | Dallas, TX | No CDL, tows, unleaded van | CDL hard-fails on the big trucks, origin-radius alerts for TX/OK, trial subscription |
 | rob@sectional.demo | Denver, CO | CDL-B, does not tow | Return-transport costs biting into net, long-run chains |
 
@@ -159,10 +172,14 @@ the formulas are the plain reading of the profile fields:
 | fuel | (miles + deadhead) / mpg × fuel price (default diesel 3.85 / unleaded 3.30, override via `fuelPrice`) |
 | hotel | (ceil(est_days) − 1) nights × hotel_budget |
 | food | ceil(est_days) × food_budget |
+| tolls | (miles + deadhead) × toll_per_mile (IFTA, permits, parking fold in here) |
+| other | other_per_load, a user-defined fixed cost |
 | return | 0 if backhaul, or if the load is towable and the driver tows (they drive their own car home); else return_cost_estimate, else transport_budget |
 | net | pay − (fuel + hotel + food + return) |
 | OVER BUDGET | expenses > max_expense_per_load |
-| match score | 100 minus weighted deductions (budget 25, net/day 20, net/load 20, net/mile 15, deadhead 10, mileage band 10); a CDL the driver lacks zeroes it |
+| Profit Match Score | weighted factors from the brief: projected net 30, net/day 25, expense efficiency 15, pay/mile 10, deadhead 10, next-load opportunity 5, return transportation 5. Each factor scores 0–1 against the driver's own thresholds. Over budget caps the score at 35; a CDL the driver lacks zeroes it |
+| tiers | Top pick ≥ 85, Good ≥ 65, Review otherwise; Over budget and Low net (net below min_net_per_load) override |
+| chains | `searchChains` links loads state-to-state with pickup on or after the previous delivery day, never using over-budget or CDL-fail loads; `dayPlanner` and `strategies` are built on it |
 
 Before Phase 2, diff these against the client's current numbers and change
 **this file**, then delete the client copy. Every alert rule runs through the

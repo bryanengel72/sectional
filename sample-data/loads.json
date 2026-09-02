@@ -11,6 +11,7 @@
     "dest_city": "Kansas City",
     "dest_state": "MO",
     "load_date": "2026-09-02",
+    "day_offset": 0,
     "miles": 491,
     "deadhead_miles": 38,
     "towable": true,
@@ -25,8 +26,7 @@
       "cdl_class": "B",
       "pickup_window": "13:00-17:00",
       "notes": "Fuel card provided"
-    },
-    "day_offset": 0
+    }
   },
   {
     "id": "0bb13972-b642-4457-a5ff-83e5ed89ab6d",
@@ -40,6 +40,7 @@
     "dest_city": "Tulsa",
     "dest_state": "OK",
     "load_date": "2026-09-02",
+    "day_offset": 0,
     "miles": 282,
     "deadhead_miles": 1,
     "towable": true,
@@ -54,8 +55,7 @@
       "cdl_class": "A",
       "pickup_window": "08:00-12:00",
       "notes": "DOT inspection on file"
-    },
-    "day_offset": 0
+    }
   },
   {
     "id": "3e1fdb9e-528f-48a2-ae49-f4aeb6715a80",
@@ -69,6 +69,7 @@
     "dest_city": "Tulsa",
     "dest_state": "OK",
     "load_date": "2026-09-02",
+    "day_offset": 0,
     "miles": 259,
     "deadhead_miles": 35,
     "towable": false,
@@ -83,8 +84,7 @@
       "cdl_class": null,
       "pickup_window": "10:00-14:00",
       "notes": "Keys at guard shack"
-    },
-    "day_offset": 0
+    }
   },
   {
     "id": "a496b414-c06f-4a22-8e2c-0cd72bdf1b6c",
@@ -98,6 +98,7 @@
     "dest_city": "Minneapolis",
     "dest_state": "MN",
     "load_date": "2026-09-02",
+    "day_offset": 0,
     "miles": 833,
     "deadhead_miles": 44,
     "towable": false,
@@ -112,8 +113,7 @@
       "cdl_class": null,
       "pickup_window": "13:00-17:00",
       "notes": ""
-    },
-    "day_offset": 0
+    }
   },
   {
     "id": "0f2abc51-6312-41e7-8c26-3e26d597207a",
@@ -127,6 +127,7 @@
     "dest_city": "Dallas",
     "dest_state": "TX",
     "load_date": "2026-09-02",
+    "day_offset": 0,
     "miles": 500,
     "deadhead_miles": 19,
     "towable": false,
@@ -141,8 +142,7 @@
       "cdl_class": null,
       "pickup_window": "13:00-17:00",
       "notes": "Keys at guard shack"
-    },
-    "day_offset": 0
+    }
   },
   {
     "id": "7870c757-c495-4011-b2ab-fe26e3fe8f15",
@@ -156,6 +156,7 @@
     "dest_city": "Denver",
     "dest_state": "CO",
     "load_date": "2026-09-03",
+    "day_offset": 1,
     "miles": 788,
     "deadhead_miles": 12,
     "towable": true,
@@ -170,8 +171,7 @@
       "cdl_class": "A",
       "pickup_window": "13:00-17:00",
       "notes": ""
-    },
-    "day_offset": 1
+    }
   },
   {
     "id": "3da5efd0-d93c-462d-93fd-2cb9d63992a0",
@@ -185,6 +185,7 @@
     "dest_city": "Oklahoma City",
     "dest_state": "OK",
     "load_date": "2026-09-03",
+    "day_offset": 1,
     "miles": 600,
     "deadhead_miles": 111,
     "towable": true,
@@ -199,8 +200,7 @@
       "cdl_class": "B",
       "pickup_window": "07:00-10:00",
       "notes": ""
-    },
-    "day_offset": 1
+    }
   },
   {
     "id": "6b8b3458-4247-431e-bccc-9eb401ae4c2c",
@@ -214,6 +214,7 @@
     "dest_city": "Dallas",
     "dest_state": "TX",
     "load_date": "2026-09-03",
+    "day_offset": 1,
     "miles": 268,
     "deadhead_miles": 108,
     "towable": false,
@@ -228,8 +229,7 @@
       "cdl_class": "A",
       "pickup_window": "13:00-17:00",
       "notes": ""
-    },
-    "day_offset": 1
+    }
   },
   {
     "id": "97fd41ea-5644-4800-a654-a034c5517558",
@@ -243,6 +243,7 @@
     "dest_city": "Dallas",
     "dest_state": "TX",
     "load_date": "2026-09-03",
+    "day_offset": 1,
     "miles": 500,
     "deadhead_miles": 36,
     "towable": true,
@@ -257,8 +258,7 @@
       "cdl_class": "A",
       "pickup_window": "08:00-12:00",
       "notes": ""
-    },
-    "day_offset": 1
+    }
   },
   {
     "id": "010c066e-2668-4121-930b-a9f177556fd3",
@@ -272,6 +272,7 @@
     "dest_city": "Kansas City",
     "dest_state": "MO",
     "load_date": "2026-09-03",
+    "day_offset": 1,
     "miles": 283,
     "deadhead_miles": 22,
     "towable": true,
@@ -286,8 +287,7 @@
       "cdl_class": "B",
       "pickup_window": "07:00-10:00",
       "notes": "Call dispatch 30 min out"
-    },
-    "day_offset": 1
+    }
   },
   {
     "id": "ee557514-ed0e-4b6b-bbb5-f8294c6b2bbf",
@@ -301,6 +301,7 @@
     "dest_city": "Kansas City",
     "dest_state": "MO",
     "load_date": "2026-09-03",
+    "day_offset": 1,
     "miles": 283,
     "deadhead_miles": 46,
     "towable": false,
@@ -315,8 +316,7 @@
       "cdl_class": "B",
       "pickup_window": "10:00-14:00",
       "notes": ""
-    },
-    "day_offset": 1
+    }
   },
   {
     "id": "6d90149b-e083-4593-bda7-2a875aaa0b5d",
@@ -330,6 +330,7 @@
     "dest_city": "Kansas City",
     "dest_state": "MO",
     "load_date": "2026-09-04",
+    "day_offset": 2,
     "miles": 804,
     "deadhead_miles": 18,
     "towable": true,
@@ -344,8 +345,7 @@
       "cdl_class": "B",
       "pickup_window": "07:00-10:00",
       "notes": "Call dispatch 30 min out"
-    },
-    "day_offset": 2
+    }
   },
   {
     "id": "5daa7222-c91f-4d8c-bc5a-7d5a0a366c40",
@@ -359,6 +359,7 @@
     "dest_city": "Tulsa",
     "dest_state": "OK",
     "load_date": "2026-09-04",
+    "day_offset": 2,
     "miles": 712,
     "deadhead_miles": 5,
     "towable": false,
@@ -373,8 +374,7 @@
       "cdl_class": "B",
       "pickup_window": "07:00-10:00",
       "notes": ""
-    },
-    "day_offset": 2
+    }
   },
   {
     "id": "883db71e-3c7f-4dbd-b3a0-afedee9f3129",
@@ -388,6 +388,7 @@
     "dest_city": "Denver",
     "dest_state": "CO",
     "load_date": "2026-09-04",
+    "day_offset": 2,
     "miles": 788,
     "deadhead_miles": 10,
     "towable": false,
@@ -402,8 +403,7 @@
       "cdl_class": "B",
       "pickup_window": "07:00-10:00",
       "notes": "Fuel card provided"
-    },
-    "day_offset": 2
+    }
   },
   {
     "id": "169ff7e7-4c76-4009-ade0-5f64dcd48c6e",
@@ -417,6 +417,7 @@
     "dest_city": "Indianapolis",
     "dest_state": "IN",
     "load_date": "2026-09-04",
+    "day_offset": 2,
     "miles": 909,
     "deadhead_miles": 149,
     "towable": true,
@@ -431,8 +432,7 @@
       "cdl_class": "B",
       "pickup_window": "08:00-12:00",
       "notes": "Call dispatch 30 min out"
-    },
-    "day_offset": 2
+    }
   },
   {
     "id": "6ecd5045-efc8-4438-8ada-41049f15a761",
@@ -446,6 +446,7 @@
     "dest_city": "Indianapolis",
     "dest_state": "IN",
     "load_date": "2026-09-04",
+    "day_offset": 2,
     "miles": 1030,
     "deadhead_miles": 38,
     "towable": true,
@@ -460,8 +461,7 @@
       "cdl_class": "A",
       "pickup_window": "10:00-14:00",
       "notes": "Call dispatch 30 min out"
-    },
-    "day_offset": 2
+    }
   },
   {
     "id": "62c5c300-a294-49a6-8ece-fa607aa03e9f",
@@ -475,6 +475,7 @@
     "dest_city": "St. Louis",
     "dest_state": "MO",
     "load_date": "2026-09-04",
+    "day_offset": 2,
     "miles": 286,
     "deadhead_miles": 47,
     "towable": true,
@@ -489,8 +490,7 @@
       "cdl_class": "B",
       "pickup_window": "10:00-14:00",
       "notes": "Fuel card provided"
-    },
-    "day_offset": 2
+    }
   },
   {
     "id": "dc4b8f01-f717-4d18-87b9-4cdf1f4d4a2f",
@@ -504,6 +504,7 @@
     "dest_city": "Albuquerque",
     "dest_state": "NM",
     "load_date": "2026-09-04",
+    "day_offset": 2,
     "miles": 613,
     "deadhead_miles": 5,
     "towable": false,
@@ -518,8 +519,7 @@
       "cdl_class": "A",
       "pickup_window": "13:00-17:00",
       "notes": "No weekend delivery"
-    },
-    "day_offset": 2
+    }
   },
   {
     "id": "f9e5ada5-f790-4597-8308-8a9dc0388f40",
@@ -533,6 +533,7 @@
     "dest_city": "Dallas",
     "dest_state": "TX",
     "load_date": "2026-09-05",
+    "day_offset": 3,
     "miles": 856,
     "deadhead_miles": 11,
     "towable": false,
@@ -547,8 +548,7 @@
       "cdl_class": null,
       "pickup_window": "08:00-12:00",
       "notes": "Call dispatch 30 min out"
-    },
-    "day_offset": 3
+    }
   },
   {
     "id": "ec9d67df-a87b-439d-9fd0-195bcb6ade6c",
@@ -562,6 +562,7 @@
     "dest_city": "Louisville",
     "dest_state": "KY",
     "load_date": "2026-09-05",
+    "day_offset": 3,
     "miles": 864,
     "deadhead_miles": 13,
     "towable": false,
@@ -576,8 +577,7 @@
       "cdl_class": null,
       "pickup_window": "07:00-10:00",
       "notes": "DOT inspection on file"
-    },
-    "day_offset": 3
+    }
   },
   {
     "id": "9bf671e4-be94-4bfc-bde2-11b8691b2b3d",
@@ -591,6 +591,7 @@
     "dest_city": "Indianapolis",
     "dest_state": "IN",
     "load_date": "2026-09-05",
+    "day_offset": 3,
     "miles": 1188,
     "deadhead_miles": 53,
     "towable": true,
@@ -605,8 +606,7 @@
       "cdl_class": "A",
       "pickup_window": "08:00-12:00",
       "notes": "DOT inspection on file"
-    },
-    "day_offset": 3
+    }
   },
   {
     "id": "2b3995f7-dc76-4e1e-8888-5ec007046af0",
@@ -620,6 +620,7 @@
     "dest_city": "Albuquerque",
     "dest_state": "NM",
     "load_date": "2026-09-05",
+    "day_offset": 3,
     "miles": 398,
     "deadhead_miles": 4,
     "towable": false,
@@ -634,8 +635,7 @@
       "cdl_class": null,
       "pickup_window": "08:00-12:00",
       "notes": "Fuel card provided"
-    },
-    "day_offset": 3
+    }
   },
   {
     "id": "04fb7e6a-0337-4859-b4c5-3a2082976cb4",
@@ -649,6 +649,7 @@
     "dest_city": "San Antonio",
     "dest_state": "TX",
     "load_date": "2026-09-05",
+    "day_offset": 3,
     "miles": 225,
     "deadhead_miles": 32,
     "towable": false,
@@ -663,8 +664,7 @@
       "cdl_class": null,
       "pickup_window": "07:00-10:00",
       "notes": "DOT inspection on file"
-    },
-    "day_offset": 3
+    }
   },
   {
     "id": "8fb4a950-ebb1-4650-a75e-79e23e8ac298",
@@ -678,6 +678,7 @@
     "dest_city": "Tulsa",
     "dest_state": "OK",
     "load_date": "2026-09-05",
+    "day_offset": 3,
     "miles": 259,
     "deadhead_miles": 12,
     "towable": true,
@@ -692,8 +693,7 @@
       "cdl_class": null,
       "pickup_window": "13:00-17:00",
       "notes": "No weekend delivery"
-    },
-    "day_offset": 3
+    }
   },
   {
     "id": "10c0d6d4-9540-45f2-81ec-e71722626765",
@@ -707,6 +707,7 @@
     "dest_city": "Columbus",
     "dest_state": "OH",
     "load_date": "2026-09-05",
+    "day_offset": 3,
     "miles": 737,
     "deadhead_miles": 14,
     "towable": false,
@@ -721,8 +722,7 @@
       "cdl_class": null,
       "pickup_window": "07:00-10:00",
       "notes": "Fuel card provided"
-    },
-    "day_offset": 3
+    }
   },
   {
     "id": "5722730a-e3c1-4984-ada9-99ea910836cf",
@@ -736,6 +736,7 @@
     "dest_city": "Phoenix",
     "dest_state": "AZ",
     "load_date": "2026-09-05",
+    "day_offset": 3,
     "miles": 1246,
     "deadhead_miles": 27,
     "towable": false,
@@ -750,8 +751,7 @@
       "cdl_class": null,
       "pickup_window": "10:00-14:00",
       "notes": "Keys at guard shack"
-    },
-    "day_offset": 3
+    }
   },
   {
     "id": "868027dc-ebd2-45a8-bfc0-384c3c605c77",
@@ -765,6 +765,7 @@
     "dest_city": "Denver",
     "dest_state": "CO",
     "load_date": "2026-09-05",
+    "day_offset": 3,
     "miles": 1044,
     "deadhead_miles": 43,
     "towable": true,
@@ -779,8 +780,7 @@
       "cdl_class": "A",
       "pickup_window": "08:00-12:00",
       "notes": ""
-    },
-    "day_offset": 3
+    }
   },
   {
     "id": "ec23aff1-7ab0-405b-a331-315dcffced05",
@@ -794,6 +794,7 @@
     "dest_city": "Salt Lake City",
     "dest_state": "UT",
     "load_date": "2026-09-05",
+    "day_offset": 3,
     "miles": 1025,
     "deadhead_miles": 17,
     "towable": true,
@@ -808,8 +809,7 @@
       "cdl_class": null,
       "pickup_window": "08:00-12:00",
       "notes": ""
-    },
-    "day_offset": 3
+    }
   },
   {
     "id": "88d5bae9-ed49-4b23-a6f6-51807943b7d1",
@@ -823,6 +823,7 @@
     "dest_city": "Columbus",
     "dest_state": "OH",
     "load_date": "2026-09-05",
+    "day_offset": 3,
     "miles": 471,
     "deadhead_miles": 0,
     "towable": true,
@@ -837,8 +838,7 @@
       "cdl_class": "A",
       "pickup_window": "10:00-14:00",
       "notes": "DOT inspection on file"
-    },
-    "day_offset": 3
+    }
   },
   {
     "id": "e6cf0069-8ac6-4da4-8d07-e0c8cdd3c33f",
@@ -852,6 +852,7 @@
     "dest_city": "Dallas",
     "dest_state": "TX",
     "load_date": "2026-09-06",
+    "day_offset": 4,
     "miles": 788,
     "deadhead_miles": 84,
     "towable": true,
@@ -866,8 +867,7 @@
       "cdl_class": null,
       "pickup_window": "13:00-17:00",
       "notes": ""
-    },
-    "day_offset": 4
+    }
   },
   {
     "id": "f5815f1f-19cf-47c4-bd5b-7117b2526938",
@@ -881,6 +881,7 @@
     "dest_city": "Dallas",
     "dest_state": "TX",
     "load_date": "2026-09-06",
+    "day_offset": 4,
     "miles": 268,
     "deadhead_miles": 5,
     "towable": false,
@@ -895,8 +896,7 @@
       "cdl_class": null,
       "pickup_window": "10:00-14:00",
       "notes": "No weekend delivery"
-    },
-    "day_offset": 4
+    }
   },
   {
     "id": "6c2a81c1-cbd7-49b9-aba6-47fa14dcf7ce",
@@ -910,6 +910,7 @@
     "dest_city": "San Antonio",
     "dest_state": "TX",
     "load_date": "2026-09-06",
+    "day_offset": 4,
     "miles": 1190,
     "deadhead_miles": 14,
     "towable": true,
@@ -924,8 +925,7 @@
       "cdl_class": "B",
       "pickup_window": "07:00-10:00",
       "notes": "Keys at guard shack"
-    },
-    "day_offset": 4
+    }
   },
   {
     "id": "8cccaee7-877f-496c-8a69-6c73875f363d",
@@ -939,6 +939,7 @@
     "dest_city": "Minneapolis",
     "dest_state": "MN",
     "load_date": "2026-09-06",
+    "day_offset": 4,
     "miles": 826,
     "deadhead_miles": 10,
     "towable": true,
@@ -953,8 +954,7 @@
       "cdl_class": "A",
       "pickup_window": "13:00-17:00",
       "notes": "Fuel card provided"
-    },
-    "day_offset": 4
+    }
   },
   {
     "id": "151567d0-3344-4351-b376-61d25964a6bb",
@@ -968,6 +968,7 @@
     "dest_city": "Charlotte",
     "dest_state": "NC",
     "load_date": "2026-09-07",
+    "day_offset": 5,
     "miles": 1105,
     "deadhead_miles": 156,
     "towable": true,
@@ -982,8 +983,7 @@
       "cdl_class": "A",
       "pickup_window": "10:00-14:00",
       "notes": "Call dispatch 30 min out"
-    },
-    "day_offset": 5
+    }
   },
   {
     "id": "e7413e5a-9115-4aaf-bff7-98a02515b840",
@@ -997,6 +997,7 @@
     "dest_city": "Oklahoma City",
     "dest_state": "OK",
     "load_date": "2026-09-07",
+    "day_offset": 5,
     "miles": 600,
     "deadhead_miles": 34,
     "towable": true,
@@ -1011,8 +1012,7 @@
       "cdl_class": "A",
       "pickup_window": "07:00-10:00",
       "notes": ""
-    },
-    "day_offset": 5
+    }
   },
   {
     "id": "4b4cb316-6d1b-4a70-b1ce-d048a4877ae9",
@@ -1026,6 +1026,7 @@
     "dest_city": "Minneapolis",
     "dest_state": "MN",
     "load_date": "2026-09-07",
+    "day_offset": 5,
     "miles": 831,
     "deadhead_miles": 26,
     "towable": false,
@@ -1040,8 +1041,7 @@
       "cdl_class": null,
       "pickup_window": "10:00-14:00",
       "notes": ""
-    },
-    "day_offset": 5
+    }
   },
   {
     "id": "aae95de1-b773-4e06-8ba4-44f8928941fc",
@@ -1055,6 +1055,7 @@
     "dest_city": "Omaha",
     "dest_state": "NE",
     "load_date": "2026-09-07",
+    "day_offset": 5,
     "miles": 579,
     "deadhead_miles": 42,
     "towable": true,
@@ -1069,8 +1070,7 @@
       "cdl_class": "A",
       "pickup_window": "08:00-12:00",
       "notes": "Keys at guard shack"
-    },
-    "day_offset": 5
+    }
   },
   {
     "id": "d8642e32-4418-41a8-82b3-e1a85b4fa6a1",
@@ -1084,6 +1084,7 @@
     "dest_city": "Dallas",
     "dest_state": "TX",
     "load_date": "2026-09-07",
+    "day_offset": 5,
     "miles": 268,
     "deadhead_miles": 19,
     "towable": true,
@@ -1098,8 +1099,7 @@
       "cdl_class": null,
       "pickup_window": "13:00-17:00",
       "notes": "Keys at guard shack"
-    },
-    "day_offset": 5
+    }
   },
   {
     "id": "df492891-b111-4e35-a7a8-8d0f6133e759",
@@ -1113,6 +1113,7 @@
     "dest_city": "Denver",
     "dest_state": "CO",
     "load_date": "2026-09-07",
+    "day_offset": 5,
     "miles": 663,
     "deadhead_miles": 53,
     "towable": true,
@@ -1127,8 +1128,7 @@
       "cdl_class": null,
       "pickup_window": "07:00-10:00",
       "notes": "No weekend delivery"
-    },
-    "day_offset": 5
+    }
   },
   {
     "id": "418f6d2f-ed65-4eda-973c-48db46581714",
@@ -1142,6 +1142,7 @@
     "dest_city": "Denver",
     "dest_state": "CO",
     "load_date": "2026-09-07",
+    "day_offset": 5,
     "miles": 1044,
     "deadhead_miles": 2,
     "towable": true,
@@ -1156,8 +1157,7 @@
       "cdl_class": "A",
       "pickup_window": "07:00-10:00",
       "notes": "Fuel card provided"
-    },
-    "day_offset": 5
+    }
   },
   {
     "id": "0d05a24f-5b40-42d9-8169-1d392f0dc536",
@@ -1171,6 +1171,7 @@
     "dest_city": "Cincinnati",
     "dest_state": "OH",
     "load_date": "2026-09-07",
+    "day_offset": 5,
     "miles": 901,
     "deadhead_miles": 15,
     "towable": true,
@@ -1185,8 +1186,7 @@
       "cdl_class": "A",
       "pickup_window": "10:00-14:00",
       "notes": "No weekend delivery"
-    },
-    "day_offset": 5
+    }
   },
   {
     "id": "a1ddec1f-e4cd-49fd-84c7-e7b9904d37df",
@@ -1200,6 +1200,7 @@
     "dest_city": "Kansas City",
     "dest_state": "MO",
     "load_date": "2026-09-07",
+    "day_offset": 5,
     "miles": 355,
     "deadhead_miles": 102,
     "towable": true,
@@ -1214,8 +1215,7 @@
       "cdl_class": "B",
       "pickup_window": "08:00-12:00",
       "notes": ""
-    },
-    "day_offset": 5
+    }
   },
   {
     "id": "438e55c1-011f-4390-9ce2-23339bbdab85",
@@ -1229,6 +1229,7 @@
     "dest_city": "Kansas City",
     "dest_state": "MO",
     "load_date": "2026-09-08",
+    "day_offset": 6,
     "miles": 491,
     "deadhead_miles": 35,
     "towable": false,
@@ -1243,8 +1244,7 @@
       "cdl_class": null,
       "pickup_window": "07:00-10:00",
       "notes": "DOT inspection on file"
-    },
-    "day_offset": 6
+    }
   },
   {
     "id": "16746f43-150c-4980-a2c2-34144272b0a9",
@@ -1258,6 +1258,7 @@
     "dest_city": "Des Moines",
     "dest_state": "IA",
     "load_date": "2026-09-08",
+    "day_offset": 6,
     "miles": 980,
     "deadhead_miles": 24,
     "towable": false,
@@ -1272,8 +1273,7 @@
       "cdl_class": "B",
       "pickup_window": "13:00-17:00",
       "notes": "No weekend delivery"
-    },
-    "day_offset": 6
+    }
   },
   {
     "id": "66af8858-dae2-4b2c-9047-728aca74b0cd",
@@ -1287,6 +1287,7 @@
     "dest_city": "Oklahoma City",
     "dest_state": "OK",
     "load_date": "2026-09-08",
+    "day_offset": 6,
     "miles": 492,
     "deadhead_miles": 40,
     "towable": true,
@@ -1301,8 +1302,7 @@
       "cdl_class": "B",
       "pickup_window": "10:00-14:00",
       "notes": "DOT inspection on file"
-    },
-    "day_offset": 6
+    }
   },
   {
     "id": "fff9d3e4-c7f6-4a3a-aece-c439ae2ad7d6",
@@ -1316,6 +1316,7 @@
     "dest_city": "Dallas",
     "dest_state": "TX",
     "load_date": "2026-09-09",
+    "day_offset": 7,
     "miles": 856,
     "deadhead_miles": 37,
     "towable": false,
@@ -1330,8 +1331,7 @@
       "cdl_class": null,
       "pickup_window": "08:00-12:00",
       "notes": "Keys at guard shack"
-    },
-    "day_offset": 7
+    }
   },
   {
     "id": "80d755eb-11a4-4a9f-824b-3586b34616cb",
@@ -1345,6 +1345,7 @@
     "dest_city": "Des Moines",
     "dest_state": "IA",
     "load_date": "2026-09-09",
+    "day_offset": 7,
     "miles": 754,
     "deadhead_miles": 17,
     "towable": true,
@@ -1359,8 +1360,7 @@
       "cdl_class": "A",
       "pickup_window": "13:00-17:00",
       "notes": ""
-    },
-    "day_offset": 7
+    }
   },
   {
     "id": "628be9fb-bc2f-4e2c-b9c9-926d60c7fd02",
@@ -1374,6 +1374,7 @@
     "dest_city": "Chicago",
     "dest_state": "IL",
     "load_date": "2026-09-09",
+    "day_offset": 7,
     "miles": 958,
     "deadhead_miles": 160,
     "towable": false,
@@ -1388,8 +1389,7 @@
       "cdl_class": null,
       "pickup_window": "10:00-14:00",
       "notes": ""
-    },
-    "day_offset": 7
+    }
   },
   {
     "id": "acfbb6a1-76a8-45f5-b9c2-6a5bb1c3654c",
@@ -1403,6 +1403,7 @@
     "dest_city": "Omaha",
     "dest_state": "NE",
     "load_date": "2026-09-09",
+    "day_offset": 7,
     "miles": 579,
     "deadhead_miles": 50,
     "towable": true,
@@ -1417,8 +1418,7 @@
       "cdl_class": "A",
       "pickup_window": "07:00-10:00",
       "notes": ""
-    },
-    "day_offset": 7
+    }
   },
   {
     "id": "83ed5d1c-4718-4b16-9c21-b148f81786ff",
@@ -1432,6 +1432,7 @@
     "dest_city": "Cincinnati",
     "dest_state": "OH",
     "load_date": "2026-09-09",
+    "day_offset": 7,
     "miles": 1062,
     "deadhead_miles": 7,
     "towable": true,
@@ -1446,8 +1447,7 @@
       "cdl_class": null,
       "pickup_window": "10:00-14:00",
       "notes": ""
-    },
-    "day_offset": 7
+    }
   },
   {
     "id": "11c8b8af-3cd9-46aa-89a2-73032f8864e8",
@@ -1461,6 +1461,7 @@
     "dest_city": "Little Rock",
     "dest_state": "AR",
     "load_date": "2026-09-09",
+    "day_offset": 7,
     "miles": 463,
     "deadhead_miles": 46,
     "towable": true,
@@ -1475,8 +1476,7 @@
       "cdl_class": "A",
       "pickup_window": "13:00-17:00",
       "notes": "Fuel card provided"
-    },
-    "day_offset": 7
+    }
   },
   {
     "id": "4c1ac73d-b45f-4e8e-8de1-2e9d30052fe7",
@@ -1490,6 +1490,7 @@
     "dest_city": "Denver",
     "dest_state": "CO",
     "load_date": "2026-09-09",
+    "day_offset": 7,
     "miles": 1188,
     "deadhead_miles": 116,
     "towable": true,
@@ -1504,8 +1505,7 @@
       "cdl_class": null,
       "pickup_window": "10:00-14:00",
       "notes": ""
-    },
-    "day_offset": 7
+    }
   },
   {
     "id": "79b9730a-7de0-43fd-a212-b4d192553d30",
@@ -1519,6 +1519,7 @@
     "dest_city": "Salt Lake City",
     "dest_state": "UT",
     "load_date": "2026-09-09",
+    "day_offset": 7,
     "miles": 1098,
     "deadhead_miles": 28,
     "towable": false,
@@ -1533,8 +1534,7 @@
       "cdl_class": "A",
       "pickup_window": "10:00-14:00",
       "notes": ""
-    },
-    "day_offset": 7
+    }
   },
   {
     "id": "23518667-4943-4536-a538-0696871a1188",
@@ -1548,6 +1548,7 @@
     "dest_city": "Dallas",
     "dest_state": "TX",
     "load_date": "2026-09-09",
+    "day_offset": 7,
     "miles": 227,
     "deadhead_miles": 108,
     "towable": false,
@@ -1562,8 +1563,7 @@
       "cdl_class": null,
       "pickup_window": "13:00-17:00",
       "notes": "No weekend delivery"
-    },
-    "day_offset": 7
+    }
   },
   {
     "id": "121d5069-de3f-404a-b205-c015927f40ea",
@@ -1577,6 +1577,7 @@
     "dest_city": "Kansas City",
     "dest_state": "MO",
     "load_date": "2026-09-10",
+    "day_offset": 8,
     "miles": 491,
     "deadhead_miles": 52,
     "towable": false,
@@ -1591,8 +1592,7 @@
       "cdl_class": null,
       "pickup_window": "10:00-14:00",
       "notes": "No weekend delivery"
-    },
-    "day_offset": 8
+    }
   },
   {
     "id": "67f6932b-d7f0-439f-88b7-d0fdceb85cbe",
@@ -1606,6 +1606,7 @@
     "dest_city": "Oklahoma City",
     "dest_state": "OK",
     "load_date": "2026-09-10",
+    "day_offset": 8,
     "miles": 227,
     "deadhead_miles": 10,
     "towable": true,
@@ -1620,8 +1621,7 @@
       "cdl_class": null,
       "pickup_window": "07:00-10:00",
       "notes": "DOT inspection on file"
-    },
-    "day_offset": 8
+    }
   },
   {
     "id": "79677f92-b6c9-470a-bf85-4539ff84d12c",
@@ -1635,6 +1635,7 @@
     "dest_city": "Des Moines",
     "dest_state": "IA",
     "load_date": "2026-09-10",
+    "day_offset": 8,
     "miles": 725,
     "deadhead_miles": 10,
     "towable": false,
@@ -1649,8 +1650,7 @@
       "cdl_class": null,
       "pickup_window": "08:00-12:00",
       "notes": "Call dispatch 30 min out"
-    },
-    "day_offset": 8
+    }
   },
   {
     "id": "e7dc60cb-ebdd-45cd-94d7-1be4cd25e7c3",
@@ -1664,6 +1664,7 @@
     "dest_city": "Denver",
     "dest_state": "CO",
     "load_date": "2026-09-10",
+    "day_offset": 8,
     "miles": 1045,
     "deadhead_miles": 17,
     "towable": false,
@@ -1678,8 +1679,7 @@
       "cdl_class": null,
       "pickup_window": "07:00-10:00",
       "notes": ""
-    },
-    "day_offset": 8
+    }
   },
   {
     "id": "d0698653-737f-43a4-b60d-3cd7db877db2",
@@ -1693,6 +1693,7 @@
     "dest_city": "Dallas",
     "dest_state": "TX",
     "load_date": "2026-09-10",
+    "day_offset": 8,
     "miles": 540,
     "deadhead_miles": 97,
     "towable": false,
@@ -1707,8 +1708,7 @@
       "cdl_class": "B",
       "pickup_window": "13:00-17:00",
       "notes": ""
-    },
-    "day_offset": 8
+    }
   },
   {
     "id": "f8baef5f-3b55-4869-a322-646db527f565",
@@ -1722,6 +1722,7 @@
     "dest_city": "Kansas City",
     "dest_state": "MO",
     "load_date": "2026-09-10",
+    "day_offset": 8,
     "miles": 283,
     "deadhead_miles": 27,
     "towable": false,
@@ -1736,8 +1737,7 @@
       "cdl_class": "A",
       "pickup_window": "08:00-12:00",
       "notes": ""
-    },
-    "day_offset": 8
+    }
   },
   {
     "id": "260c5352-73d0-443a-b1c8-070d4ff3120f",
@@ -1751,6 +1751,7 @@
     "dest_city": "Phoenix",
     "dest_state": "AZ",
     "load_date": "2026-09-11",
+    "day_offset": 9,
     "miles": 1207,
     "deadhead_miles": 16,
     "towable": true,
@@ -1765,8 +1766,7 @@
       "cdl_class": "A",
       "pickup_window": "08:00-12:00",
       "notes": ""
-    },
-    "day_offset": 9
+    }
   },
   {
     "id": "23ab3893-7dac-4eeb-a679-3993e77f80a7",
@@ -1780,6 +1780,7 @@
     "dest_city": "Denver",
     "dest_state": "CO",
     "load_date": "2026-09-11",
+    "day_offset": 9,
     "miles": 1045,
     "deadhead_miles": 25,
     "towable": true,
@@ -1794,8 +1795,7 @@
       "cdl_class": "A",
       "pickup_window": "13:00-17:00",
       "notes": ""
-    },
-    "day_offset": 9
+    }
   },
   {
     "id": "66528d6f-7326-47d7-909d-8eb015074412",
@@ -1809,6 +1809,7 @@
     "dest_city": "Columbus",
     "dest_state": "OH",
     "load_date": "2026-09-11",
+    "day_offset": 9,
     "miles": 200,
     "deadhead_miles": 33,
     "towable": false,
@@ -1823,8 +1824,7 @@
       "cdl_class": null,
       "pickup_window": "10:00-14:00",
       "notes": "No weekend delivery"
-    },
-    "day_offset": 9
+    }
   },
   {
     "id": "6a20a91c-1d47-4aa6-b30a-65dc3b8c0966",
@@ -1838,6 +1838,7 @@
     "dest_city": "Omaha",
     "dest_state": "NE",
     "load_date": "2026-09-11",
+    "day_offset": 9,
     "miles": 421,
     "deadhead_miles": 33,
     "towable": false,
@@ -1852,8 +1853,7 @@
       "cdl_class": "A",
       "pickup_window": "13:00-17:00",
       "notes": "No weekend delivery"
-    },
-    "day_offset": 9
+    }
   },
   {
     "id": "ba1a4d33-bd0a-4801-b467-e5b2f51e47a9",
@@ -1867,6 +1867,7 @@
     "dest_city": "Phoenix",
     "dest_state": "AZ",
     "load_date": "2026-09-12",
+    "day_offset": 10,
     "miles": 999,
     "deadhead_miles": 93,
     "towable": true,
@@ -1881,8 +1882,7 @@
       "cdl_class": "A",
       "pickup_window": "07:00-10:00",
       "notes": ""
-    },
-    "day_offset": 10
+    }
   },
   {
     "id": "18c1a065-0cd8-4ed1-abaf-965a6b529512",
@@ -1896,6 +1896,7 @@
     "dest_city": "Charlotte",
     "dest_state": "NC",
     "load_date": "2026-09-12",
+    "day_offset": 10,
     "miles": 1117,
     "deadhead_miles": 129,
     "towable": false,
@@ -1910,8 +1911,7 @@
       "cdl_class": null,
       "pickup_window": "10:00-14:00",
       "notes": "Call dispatch 30 min out"
-    },
-    "day_offset": 10
+    }
   },
   {
     "id": "565e94fc-9c91-4f02-b22a-655d95d7654d",
@@ -1925,6 +1925,7 @@
     "dest_city": "Indianapolis",
     "dest_state": "IN",
     "load_date": "2026-09-13",
+    "day_offset": 11,
     "miles": 1030,
     "deadhead_miles": 129,
     "towable": true,
@@ -1939,8 +1940,7 @@
       "cdl_class": "A",
       "pickup_window": "07:00-10:00",
       "notes": "Fuel card provided"
-    },
-    "day_offset": 11
+    }
   },
   {
     "id": "c0ae89bf-b278-4454-a252-ec818cdd75db",
@@ -1954,6 +1954,7 @@
     "dest_city": "Atlanta",
     "dest_state": "GA",
     "load_date": "2026-09-13",
+    "day_offset": 11,
     "miles": 508,
     "deadhead_miles": 19,
     "towable": true,
@@ -1968,8 +1969,7 @@
       "cdl_class": "A",
       "pickup_window": "07:00-10:00",
       "notes": "Fuel card provided"
-    },
-    "day_offset": 11
+    }
   },
   {
     "id": "563a4117-0b29-4fa8-8e67-6dbcea7a679f",
@@ -1983,6 +1983,7 @@
     "dest_city": "Charlotte",
     "dest_state": "NC",
     "load_date": "2026-09-13",
+    "day_offset": 11,
     "miles": 675,
     "deadhead_miles": 141,
     "towable": false,
@@ -1997,8 +1998,7 @@
       "cdl_class": "B",
       "pickup_window": "07:00-10:00",
       "notes": ""
-    },
-    "day_offset": 11
+    }
   },
   {
     "id": "f0a965db-5b7c-4fd8-aebe-2cd25b21675e",
@@ -2012,6 +2012,7 @@
     "dest_city": "Omaha",
     "dest_state": "NE",
     "load_date": "2026-09-14",
+    "day_offset": 12,
     "miles": 946,
     "deadhead_miles": 22,
     "towable": true,
@@ -2026,8 +2027,7 @@
       "cdl_class": null,
       "pickup_window": "08:00-12:00",
       "notes": "Call dispatch 30 min out"
-    },
-    "day_offset": 12
+    }
   },
   {
     "id": "63487997-aeb5-4e3c-a7b3-a6e31ef28290",
@@ -2041,6 +2041,7 @@
     "dest_city": "Denver",
     "dest_state": "CO",
     "load_date": "2026-09-14",
+    "day_offset": 12,
     "miles": 1045,
     "deadhead_miles": 109,
     "towable": true,
@@ -2055,8 +2056,7 @@
       "cdl_class": "B",
       "pickup_window": "13:00-17:00",
       "notes": ""
-    },
-    "day_offset": 12
+    }
   },
   {
     "id": "84b2a7bd-986d-4e39-b997-d4a5baccf812",
@@ -2070,6 +2070,7 @@
     "dest_city": "Houston",
     "dest_state": "TX",
     "load_date": "2026-09-14",
+    "day_offset": 12,
     "miles": 1030,
     "deadhead_miles": 40,
     "towable": false,
@@ -2084,8 +2085,7 @@
       "cdl_class": null,
       "pickup_window": "07:00-10:00",
       "notes": "No weekend delivery"
-    },
-    "day_offset": 12
+    }
   },
   {
     "id": "3952530d-5ae4-4fe7-80cb-b45d1c260399",
@@ -2099,6 +2099,7 @@
     "dest_city": "Dallas",
     "dest_state": "TX",
     "load_date": "2026-09-14",
+    "day_offset": 12,
     "miles": 909,
     "deadhead_miles": 44,
     "towable": false,
@@ -2113,8 +2114,7 @@
       "cdl_class": null,
       "pickup_window": "10:00-14:00",
       "notes": "Keys at guard shack"
-    },
-    "day_offset": 12
+    }
   },
   {
     "id": "ea75da1b-a2e6-4e6f-ba5c-8b4cc7d4e6e2",
@@ -2128,6 +2128,7 @@
     "dest_city": "Cincinnati",
     "dest_state": "OH",
     "load_date": "2026-09-15",
+    "day_offset": 13,
     "miles": 440,
     "deadhead_miles": 21,
     "towable": true,
@@ -2142,8 +2143,7 @@
       "cdl_class": "A",
       "pickup_window": "08:00-12:00",
       "notes": "Fuel card provided"
-    },
-    "day_offset": 13
+    }
   },
   {
     "id": "00e941a5-80eb-42b7-877d-8a7893e6ac23",
@@ -2157,6 +2157,7 @@
     "dest_city": "Dallas",
     "dest_state": "TX",
     "load_date": "2026-09-15",
+    "day_offset": 13,
     "miles": 268,
     "deadhead_miles": 20,
     "towable": true,
@@ -2171,8 +2172,7 @@
       "cdl_class": "A",
       "pickup_window": "08:00-12:00",
       "notes": "Call dispatch 30 min out"
-    },
-    "day_offset": 13
+    }
   },
   {
     "id": "fa77bec2-52e8-4b61-a596-08d2298c95ec",
@@ -2186,6 +2186,7 @@
     "dest_city": "Kansas City",
     "dest_state": "MO",
     "load_date": "2026-09-15",
+    "day_offset": 13,
     "miles": 770,
     "deadhead_miles": 35,
     "towable": true,
@@ -2200,8 +2201,7 @@
       "cdl_class": "A",
       "pickup_window": "07:00-10:00",
       "notes": ""
-    },
-    "day_offset": 13
+    }
   },
   {
     "id": "3757d668-faf7-4de2-80d0-113bfe1b4c4a",
@@ -2215,6 +2215,7 @@
     "dest_city": "Oklahoma City",
     "dest_state": "OK",
     "load_date": "2026-09-15",
+    "day_offset": 13,
     "miles": 355,
     "deadhead_miles": 42,
     "towable": false,
@@ -2229,8 +2230,7 @@
       "cdl_class": "B",
       "pickup_window": "07:00-10:00",
       "notes": ""
-    },
-    "day_offset": 13
+    }
   },
   {
     "id": "1b940bf1-3925-4eaa-8707-5e521898f284",
@@ -2244,6 +2244,7 @@
     "dest_city": "Minneapolis",
     "dest_state": "MN",
     "load_date": "2026-09-15",
+    "day_offset": 13,
     "miles": 833,
     "deadhead_miles": 3,
     "towable": false,
@@ -2258,7 +2259,6 @@
       "cdl_class": null,
       "pickup_window": "08:00-12:00",
       "notes": ""
-    },
-    "day_offset": 13
+    }
   }
 ]

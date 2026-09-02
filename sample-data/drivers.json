@@ -10,6 +10,8 @@
       "hotel_budget": 95,
       "food_budget": 45,
       "transport_budget": 200,
+      "toll_per_mile": 0.03,
+      "other_per_load": 0,
       "max_expense_per_load": 650,
       "max_weekly_expense": 1400,
       "min_net_per_day": 750,
@@ -24,8 +26,8 @@
     },
     "goal": {
       "id": "7461406f-eb91-45dd-8aec-03bd5646ed57",
-      "weekly_net_goal": 3200,
-      "days_available": 5
+      "weekly_net_goal": 3000,
+      "days_available": 4
     },
     "alert_rules": [
       {
@@ -48,28 +50,17 @@
     ],
     "saved_plans": [
       {
-        "id": "2e191727-aa01-4a46-ad59-9b291a679714",
+        "id": "e5d8d371-a3dd-4054-b179-7978c455abc1",
         "driver_id": "11111111-1111-4111-8111-111111111111",
-        "name": "This week — out and back",
+        "name": "Maximum net",
         "load_ids": [
-          "d0698653-737f-43a4-b60d-3cd7db877db2",
-          "fa77bec2-52e8-4b61-a596-08d2298c95ec"
+          "010c066e-2668-4121-930b-a9f177556fd3",
+          "8fb4a950-ebb1-4650-a75e-79e23e8ac298",
+          "8cccaee7-877f-496c-8a69-6c73875f363d"
         ],
-        "projected_net": 2095.61,
-        "projected_expenses": 1014.39,
-        "days_used": 2.5
-      },
-      {
-        "id": "3cf8967c-3daf-47f8-98d4-83fbb54dc5db",
-        "driver_id": "11111111-1111-4111-8111-111111111111",
-        "name": "Long run",
-        "load_ids": [
-          "d0698653-737f-43a4-b60d-3cd7db877db2",
-          "63487997-aeb5-4e3c-a7b3-a6e31ef28290"
-        ],
-        "projected_net": 2504.18,
-        "projected_expenses": 1155.82,
-        "days_used": 3
+        "projected_net": 3055.4,
+        "projected_expenses": 889.6,
+        "days_used": 3.5
       }
     ],
     "alert_hits": [
@@ -79,7 +70,7 @@
         "driver_id": "11111111-1111-4111-8111-111111111111",
         "load_id": "62c5c300-a294-49a6-8ece-fa607aa03e9f",
         "seen": false,
-        "matched_at": "2026-09-02T03:07:18.747Z"
+        "matched_at": "2026-09-02T03:48:43.346Z"
       },
       {
         "id": "ff45bf25-ae15-4fd5-8816-ce481f292250",
@@ -87,7 +78,7 @@
         "driver_id": "11111111-1111-4111-8111-111111111111",
         "load_id": "88d5bae9-ed49-4b23-a6f6-51807943b7d1",
         "seen": true,
-        "matched_at": "2026-08-31T10:40:18.747Z"
+        "matched_at": "2026-08-31T11:21:43.346Z"
       },
       {
         "id": "0b3f53f1-bdfc-45c0-b086-e7157a919644",
@@ -95,7 +86,7 @@
         "driver_id": "11111111-1111-4111-8111-111111111111",
         "load_id": "8cccaee7-877f-496c-8a69-6c73875f363d",
         "seen": false,
-        "matched_at": "2026-08-31T19:52:18.747Z"
+        "matched_at": "2026-08-31T20:33:43.346Z"
       },
       {
         "id": "2daaea2e-aed7-4b29-8100-d3680402eace",
@@ -103,7 +94,7 @@
         "driver_id": "11111111-1111-4111-8111-111111111111",
         "load_id": "aae95de1-b773-4e06-8ba4-44f8928941fc",
         "seen": false,
-        "matched_at": "2026-09-01T03:36:18.747Z"
+        "matched_at": "2026-09-01T04:17:43.346Z"
       },
       {
         "id": "60d6f087-4572-433c-9b92-688cc2af018a",
@@ -111,7 +102,7 @@
         "driver_id": "11111111-1111-4111-8111-111111111111",
         "load_id": "80d755eb-11a4-4a9f-824b-3586b34616cb",
         "seen": false,
-        "matched_at": "2026-09-01T09:38:18.747Z"
+        "matched_at": "2026-09-01T10:19:43.346Z"
       },
       {
         "id": "e8df744b-08b4-48eb-a110-98dd9fd687c4",
@@ -119,223 +110,175 @@
         "driver_id": "11111111-1111-4111-8111-111111111111",
         "load_id": "11c8b8af-3cd9-46aa-89a2-73032f8864e8",
         "seen": true,
-        "matched_at": "2026-08-31T11:53:18.747Z"
+        "matched_at": "2026-08-31T12:34:43.346Z"
       },
       {
         "id": "24343a43-00df-446f-92cb-8d7c63ce37d6",
         "alert_rule_id": "1b4d90f7-f997-402e-a6c2-45c1bd6eff21",
         "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "ba1a4d33-bd0a-4801-b467-e5b2f51e47a9",
+        "load_id": "3757d668-faf7-4de2-80d0-113bfe1b4c4a",
         "seen": true,
-        "matched_at": "2026-08-31T19:28:18.747Z"
+        "matched_at": "2026-08-31T20:09:43.346Z"
       },
       {
         "id": "bef8a755-fda1-49eb-bca4-52276eb1e5c7",
-        "alert_rule_id": "1b4d90f7-f997-402e-a6c2-45c1bd6eff21",
+        "alert_rule_id": "f92e7850-04a6-41c0-ab47-b91212eeaeb8",
         "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "3757d668-faf7-4de2-80d0-113bfe1b4c4a",
+        "load_id": "010c066e-2668-4121-930b-a9f177556fd3",
         "seen": true,
-        "matched_at": "2026-09-01T01:38:18.747Z"
+        "matched_at": "2026-09-01T02:19:43.346Z"
       },
       {
         "id": "d113c4c8-f665-42b0-a9bf-9c30ed2125bf",
         "alert_rule_id": "f92e7850-04a6-41c0-ab47-b91212eeaeb8",
         "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "010c066e-2668-4121-930b-a9f177556fd3",
+        "load_id": "ee557514-ed0e-4b6b-bbb5-f8294c6b2bbf",
         "seen": true,
-        "matched_at": "2026-09-01T21:55:18.747Z"
+        "matched_at": "2026-09-01T22:36:43.346Z"
       },
       {
         "id": "2e7ca6be-4b9e-46dc-8084-6df5f6f5876b",
         "alert_rule_id": "f92e7850-04a6-41c0-ab47-b91212eeaeb8",
         "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "ee557514-ed0e-4b6b-bbb5-f8294c6b2bbf",
+        "load_id": "a1ddec1f-e4cd-49fd-84c7-e7b9904d37df",
         "seen": false,
-        "matched_at": "2026-08-31T15:04:18.747Z"
+        "matched_at": "2026-08-31T15:45:43.346Z"
       },
       {
         "id": "e99d0022-c1c5-4114-b8ae-4e6e2970ffd0",
         "alert_rule_id": "f92e7850-04a6-41c0-ab47-b91212eeaeb8",
         "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "a1ddec1f-e4cd-49fd-84c7-e7b9904d37df",
+        "load_id": "438e55c1-011f-4390-9ce2-23339bbdab85",
         "seen": false,
-        "matched_at": "2026-09-01T01:43:18.747Z"
+        "matched_at": "2026-09-01T02:24:43.346Z"
       },
       {
         "id": "06ef203a-66b3-4525-8fd0-b9509b7dfb76",
         "alert_rule_id": "f92e7850-04a6-41c0-ab47-b91212eeaeb8",
         "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "438e55c1-011f-4390-9ce2-23339bbdab85",
+        "load_id": "f8baef5f-3b55-4869-a322-646db527f565",
         "seen": false,
-        "matched_at": "2026-09-02T02:10:18.747Z"
+        "matched_at": "2026-09-02T02:51:43.346Z"
       },
       {
         "id": "0245e6ca-a62b-415b-9d8e-70172399e688",
         "alert_rule_id": "f92e7850-04a6-41c0-ab47-b91212eeaeb8",
         "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "f8baef5f-3b55-4869-a322-646db527f565",
+        "load_id": "fa77bec2-52e8-4b61-a596-08d2298c95ec",
         "seen": false,
-        "matched_at": "2026-09-01T06:07:18.747Z"
+        "matched_at": "2026-09-01T06:48:43.346Z"
       },
       {
         "id": "81aa4a86-c895-4b90-b067-7bff1433ea82",
-        "alert_rule_id": "f92e7850-04a6-41c0-ab47-b91212eeaeb8",
+        "alert_rule_id": "57deb84d-e6bc-44a8-9038-92649b932cf2",
         "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "fa77bec2-52e8-4b61-a596-08d2298c95ec",
+        "load_id": "7870c757-c495-4011-b2ab-fe26e3fe8f15",
         "seen": false,
-        "matched_at": "2026-09-01T19:44:18.747Z"
+        "matched_at": "2026-09-01T20:25:43.346Z"
       },
       {
         "id": "5d8360f3-5b1c-4f4d-8abf-1e23b73442fb",
         "alert_rule_id": "57deb84d-e6bc-44a8-9038-92649b932cf2",
         "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "0f2abc51-6312-41e7-8c26-3e26d597207a",
+        "load_id": "883db71e-3c7f-4dbd-b3a0-afedee9f3129",
         "seen": true,
-        "matched_at": "2026-09-01T16:22:18.747Z"
+        "matched_at": "2026-09-01T17:03:43.346Z"
       },
       {
         "id": "34664d33-9bae-4bd3-baf1-31438ef314e6",
         "alert_rule_id": "57deb84d-e6bc-44a8-9038-92649b932cf2",
         "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "7870c757-c495-4011-b2ab-fe26e3fe8f15",
+        "load_id": "88d5bae9-ed49-4b23-a6f6-51807943b7d1",
         "seen": true,
-        "matched_at": "2026-08-31T09:07:18.747Z"
+        "matched_at": "2026-08-31T09:48:43.346Z"
       },
       {
         "id": "ef10fbe8-de6e-4bdc-866a-b305359f78f6",
         "alert_rule_id": "57deb84d-e6bc-44a8-9038-92649b932cf2",
         "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "883db71e-3c7f-4dbd-b3a0-afedee9f3129",
+        "load_id": "e6cf0069-8ac6-4da4-8d07-e0c8cdd3c33f",
         "seen": true,
-        "matched_at": "2026-08-31T09:10:18.747Z"
+        "matched_at": "2026-08-31T09:51:43.346Z"
       },
       {
         "id": "1b282db0-16f2-4f88-b621-82bf526acb09",
         "alert_rule_id": "57deb84d-e6bc-44a8-9038-92649b932cf2",
         "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "868027dc-ebd2-45a8-bfc0-384c3c605c77",
+        "load_id": "8cccaee7-877f-496c-8a69-6c73875f363d",
         "seen": true,
-        "matched_at": "2026-08-31T14:07:18.747Z"
+        "matched_at": "2026-08-31T14:48:43.346Z"
       },
       {
         "id": "49c6773f-9bf2-47c8-9403-48f7633e5713",
         "alert_rule_id": "57deb84d-e6bc-44a8-9038-92649b932cf2",
         "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "88d5bae9-ed49-4b23-a6f6-51807943b7d1",
+        "load_id": "aae95de1-b773-4e06-8ba4-44f8928941fc",
         "seen": false,
-        "matched_at": "2026-08-31T20:14:18.747Z"
+        "matched_at": "2026-08-31T20:55:43.346Z"
       },
       {
         "id": "69af10cc-4de1-4345-b151-f635d98f8a39",
         "alert_rule_id": "57deb84d-e6bc-44a8-9038-92649b932cf2",
         "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "e6cf0069-8ac6-4da4-8d07-e0c8cdd3c33f",
+        "load_id": "df492891-b111-4e35-a7a8-8d0f6133e759",
         "seen": false,
-        "matched_at": "2026-09-01T07:18:18.747Z"
+        "matched_at": "2026-09-01T07:59:43.346Z"
       },
       {
         "id": "8f07a1b1-ce86-4937-9a9c-52a4f1e865e0",
         "alert_rule_id": "57deb84d-e6bc-44a8-9038-92649b932cf2",
         "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "8cccaee7-877f-496c-8a69-6c73875f363d",
+        "load_id": "418f6d2f-ed65-4eda-973c-48db46581714",
         "seen": false,
-        "matched_at": "2026-09-01T18:38:18.747Z"
+        "matched_at": "2026-09-01T19:19:43.346Z"
       },
       {
         "id": "7425f5d1-09b9-41a6-b0e3-620fa99d2c08",
         "alert_rule_id": "57deb84d-e6bc-44a8-9038-92649b932cf2",
         "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "aae95de1-b773-4e06-8ba4-44f8928941fc",
+        "load_id": "80d755eb-11a4-4a9f-824b-3586b34616cb",
         "seen": true,
-        "matched_at": "2026-09-01T17:12:18.747Z"
+        "matched_at": "2026-09-01T17:53:43.346Z"
       },
       {
         "id": "fc1c95e2-e8a0-49a4-babb-05e64e121462",
         "alert_rule_id": "57deb84d-e6bc-44a8-9038-92649b932cf2",
         "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "df492891-b111-4e35-a7a8-8d0f6133e759",
+        "load_id": "acfbb6a1-76a8-45f5-b9c2-6a5bb1c3654c",
         "seen": true,
-        "matched_at": "2026-08-31T19:29:18.747Z"
+        "matched_at": "2026-08-31T20:10:43.346Z"
       },
       {
         "id": "45210f59-d21c-4043-ba37-cdaffa6c1408",
         "alert_rule_id": "57deb84d-e6bc-44a8-9038-92649b932cf2",
         "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "418f6d2f-ed65-4eda-973c-48db46581714",
+        "load_id": "11c8b8af-3cd9-46aa-89a2-73032f8864e8",
         "seen": true,
-        "matched_at": "2026-09-01T04:08:18.747Z"
+        "matched_at": "2026-09-01T04:49:43.346Z"
       },
       {
         "id": "42ac1b09-a494-450e-8e1a-7db40696af2e",
         "alert_rule_id": "57deb84d-e6bc-44a8-9038-92649b932cf2",
         "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "80d755eb-11a4-4a9f-824b-3586b34616cb",
+        "load_id": "d0698653-737f-43a4-b60d-3cd7db877db2",
         "seen": false,
-        "matched_at": "2026-09-01T01:51:18.747Z"
+        "matched_at": "2026-09-01T02:32:43.346Z"
       },
       {
         "id": "9c999a88-336b-44b0-9dc7-1e32bfb562f4",
         "alert_rule_id": "57deb84d-e6bc-44a8-9038-92649b932cf2",
         "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "acfbb6a1-76a8-45f5-b9c2-6a5bb1c3654c",
+        "load_id": "c0ae89bf-b278-4454-a252-ec818cdd75db",
         "seen": true,
-        "matched_at": "2026-08-31T22:23:18.747Z"
+        "matched_at": "2026-08-31T23:04:43.346Z"
       },
       {
         "id": "7cf41779-5ce4-4d94-97ba-8996611e852a",
         "alert_rule_id": "57deb84d-e6bc-44a8-9038-92649b932cf2",
         "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "83ed5d1c-4718-4b16-9c21-b148f81786ff",
-        "seen": false,
-        "matched_at": "2026-09-01T22:42:18.747Z"
-      },
-      {
-        "id": "8a4a6ad4-9ed1-4fd0-adc1-d74d44da8de7",
-        "alert_rule_id": "57deb84d-e6bc-44a8-9038-92649b932cf2",
-        "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "11c8b8af-3cd9-46aa-89a2-73032f8864e8",
-        "seen": false,
-        "matched_at": "2026-08-31T23:30:18.747Z"
-      },
-      {
-        "id": "f0e805c2-9d2a-4d3c-b4b4-010b11dfe0e8",
-        "alert_rule_id": "57deb84d-e6bc-44a8-9038-92649b932cf2",
-        "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "e7dc60cb-ebdd-45cd-94d7-1be4cd25e7c3",
-        "seen": false,
-        "matched_at": "2026-09-01T02:48:18.747Z"
-      },
-      {
-        "id": "0c270f08-f94d-41a5-845c-ffd0ca6ba9b9",
-        "alert_rule_id": "57deb84d-e6bc-44a8-9038-92649b932cf2",
-        "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "d0698653-737f-43a4-b60d-3cd7db877db2",
-        "seen": false,
-        "matched_at": "2026-09-01T09:19:18.747Z"
-      },
-      {
-        "id": "eb7cc6ff-7810-41e8-8f5f-33dd81e7decc",
-        "alert_rule_id": "57deb84d-e6bc-44a8-9038-92649b932cf2",
-        "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "ba1a4d33-bd0a-4801-b467-e5b2f51e47a9",
-        "seen": true,
-        "matched_at": "2026-09-01T08:19:18.747Z"
-      },
-      {
-        "id": "0b8f802b-0615-4abb-bac9-78a440680b22",
-        "alert_rule_id": "57deb84d-e6bc-44a8-9038-92649b932cf2",
-        "driver_id": "11111111-1111-4111-8111-111111111111",
-        "load_id": "c0ae89bf-b278-4454-a252-ec818cdd75db",
-        "seen": false,
-        "matched_at": "2026-09-02T02:13:18.747Z"
-      },
-      {
-        "id": "86db8deb-bb08-4247-b19b-73f53fc5a6a3",
-        "alert_rule_id": "57deb84d-e6bc-44a8-9038-92649b932cf2",
-        "driver_id": "11111111-1111-4111-8111-111111111111",
         "load_id": "fa77bec2-52e8-4b61-a596-08d2298c95ec",
-        "seen": true,
-        "matched_at": "2026-09-01T09:13:18.747Z"
+        "seen": false,
+        "matched_at": "2026-09-01T23:23:43.346Z"
       }
     ],
     "subscription": {
@@ -355,6 +298,8 @@
       "hotel_budget": 80,
       "food_budget": 35,
       "transport_budget": 160,
+      "toll_per_mile": 0.03,
+      "other_per_load": 0,
       "max_expense_per_load": 450,
       "max_weekly_expense": 1100,
       "min_net_per_day": 500,
@@ -393,142 +338,143 @@
     ],
     "saved_plans": [
       {
-        "id": "b201b508-926e-4321-8bfe-6af81beb9b7d",
+        "id": "01c3734f-0d8a-4849-b8db-ee6e8f9371fe",
         "driver_id": "22222222-2222-4222-8222-222222222222",
-        "name": "This week — out and back",
+        "name": "Maximum net",
         "load_ids": [
-          "d8642e32-4418-41a8-82b3-e1a85b4fa6a1"
+          "f5815f1f-19cf-47c4-bd5b-7117b2526938",
+          "d8642e32-4418-41a8-82b3-e1a85b4fa6a1",
+          "e7dc60cb-ebdd-45cd-94d7-1be4cd25e7c3"
         ],
-        "projected_net": 527.35,
-        "projected_expenses": 102.65,
-        "days_used": 1
+        "projected_net": 2331.01,
+        "projected_expenses": 848.99,
+        "days_used": 4
       },
       {
-        "id": "37d63e7d-efeb-497e-a539-961e11f957d3",
+        "id": "242389d2-48a7-4cac-bc71-80eded146a9f",
         "driver_id": "22222222-2222-4222-8222-222222222222",
-        "name": "Long run",
+        "name": "Best balance",
         "load_ids": [
           "d8642e32-4418-41a8-82b3-e1a85b4fa6a1",
-          "67f6932b-d7f0-439f-88b7-d0fdceb85cbe",
-          "18c1a065-0cd8-4ed1-abaf-965a6b529512"
+          "e7dc60cb-ebdd-45cd-94d7-1be4cd25e7c3"
         ],
-        "projected_net": 3451.79,
-        "projected_expenses": 863.21,
-        "days_used": 4.5
+        "projected_net": 2056.55,
+        "projected_expenses": 543.45,
+        "days_used": 3
       }
     ],
     "alert_hits": [
       {
-        "id": "e90cd6b9-69ab-447c-9bad-c19e41adf5cb",
+        "id": "8a4a6ad4-9ed1-4fd0-adc1-d74d44da8de7",
         "alert_rule_id": "68b0ab87-f18c-42a4-8027-c595af2dae1c",
         "driver_id": "22222222-2222-4222-8222-222222222222",
         "load_id": "04fb7e6a-0337-4859-b4c5-3a2082976cb4",
         "seen": false,
-        "matched_at": "2026-08-31T18:50:18.747Z"
+        "matched_at": "2026-09-01T00:11:43.346Z"
       },
       {
-        "id": "06e93015-1a5a-471e-932e-1fae0be6b993",
+        "id": "f0e805c2-9d2a-4d3c-b4b4-010b11dfe0e8",
         "alert_rule_id": "68b0ab87-f18c-42a4-8027-c595af2dae1c",
         "driver_id": "22222222-2222-4222-8222-222222222222",
         "load_id": "f5815f1f-19cf-47c4-bd5b-7117b2526938",
         "seen": false,
-        "matched_at": "2026-08-31T06:11:18.747Z"
+        "matched_at": "2026-09-01T03:29:43.346Z"
       },
       {
-        "id": "83a3f661-3d41-413f-bbb5-fe9a4b4b6135",
+        "id": "0c270f08-f94d-41a5-845c-ffd0ca6ba9b9",
         "alert_rule_id": "68b0ab87-f18c-42a4-8027-c595af2dae1c",
         "driver_id": "22222222-2222-4222-8222-222222222222",
         "load_id": "d8642e32-4418-41a8-82b3-e1a85b4fa6a1",
-        "seen": true,
-        "matched_at": "2026-09-01T05:45:18.747Z"
+        "seen": false,
+        "matched_at": "2026-09-01T10:00:43.346Z"
       },
       {
-        "id": "ab9b96a9-2b94-4268-919d-a6bb774f3740",
+        "id": "eb7cc6ff-7810-41e8-8f5f-33dd81e7decc",
         "alert_rule_id": "68b0ab87-f18c-42a4-8027-c595af2dae1c",
         "driver_id": "22222222-2222-4222-8222-222222222222",
         "load_id": "83ed5d1c-4718-4b16-9c21-b148f81786ff",
-        "seen": false,
-        "matched_at": "2026-09-01T08:36:18.747Z"
+        "seen": true,
+        "matched_at": "2026-09-01T09:00:43.346Z"
       },
       {
-        "id": "bbf20952-47a2-4e2f-a9f3-04948cbc4c22",
+        "id": "0b8f802b-0615-4abb-bac9-78a440680b22",
         "alert_rule_id": "68b0ab87-f18c-42a4-8027-c595af2dae1c",
         "driver_id": "22222222-2222-4222-8222-222222222222",
         "load_id": "23518667-4943-4536-a538-0696871a1188",
-        "seen": true,
-        "matched_at": "2026-09-01T07:03:18.747Z"
+        "seen": false,
+        "matched_at": "2026-09-02T02:54:43.346Z"
       },
       {
-        "id": "170aad41-33c3-4db2-8407-9e6dcc1f7510",
+        "id": "86db8deb-bb08-4247-b19b-73f53fc5a6a3",
         "alert_rule_id": "68b0ab87-f18c-42a4-8027-c595af2dae1c",
         "driver_id": "22222222-2222-4222-8222-222222222222",
         "load_id": "67f6932b-d7f0-439f-88b7-d0fdceb85cbe",
-        "seen": false,
-        "matched_at": "2026-09-02T02:37:18.747Z"
+        "seen": true,
+        "matched_at": "2026-09-01T09:54:43.346Z"
       },
       {
-        "id": "add21b9a-d670-4fb0-a095-1ea510bce6fd",
+        "id": "e90cd6b9-69ab-447c-9bad-c19e41adf5cb",
         "alert_rule_id": "68b0ab87-f18c-42a4-8027-c595af2dae1c",
         "driver_id": "22222222-2222-4222-8222-222222222222",
         "load_id": "e7dc60cb-ebdd-45cd-94d7-1be4cd25e7c3",
+        "seen": false,
+        "matched_at": "2026-08-31T19:31:43.346Z"
+      },
+      {
+        "id": "06e93015-1a5a-471e-932e-1fae0be6b993",
+        "alert_rule_id": "62200d28-892b-4eb2-a163-2a0c0635e20d",
+        "driver_id": "22222222-2222-4222-8222-222222222222",
+        "load_id": "0f2abc51-6312-41e7-8c26-3e26d597207a",
+        "seen": false,
+        "matched_at": "2026-08-31T06:52:43.346Z"
+      },
+      {
+        "id": "83a3f661-3d41-413f-bbb5-fe9a4b4b6135",
+        "alert_rule_id": "62200d28-892b-4eb2-a163-2a0c0635e20d",
+        "driver_id": "22222222-2222-4222-8222-222222222222",
+        "load_id": "e6cf0069-8ac6-4da4-8d07-e0c8cdd3c33f",
         "seen": true,
-        "matched_at": "2026-09-01T23:43:18.747Z"
+        "matched_at": "2026-09-01T06:26:43.346Z"
+      },
+      {
+        "id": "ab9b96a9-2b94-4268-919d-a6bb774f3740",
+        "alert_rule_id": "62200d28-892b-4eb2-a163-2a0c0635e20d",
+        "driver_id": "22222222-2222-4222-8222-222222222222",
+        "load_id": "df492891-b111-4e35-a7a8-8d0f6133e759",
+        "seen": false,
+        "matched_at": "2026-09-01T09:17:43.346Z"
+      },
+      {
+        "id": "bbf20952-47a2-4e2f-a9f3-04948cbc4c22",
+        "alert_rule_id": "62200d28-892b-4eb2-a163-2a0c0635e20d",
+        "driver_id": "22222222-2222-4222-8222-222222222222",
+        "load_id": "438e55c1-011f-4390-9ce2-23339bbdab85",
+        "seen": true,
+        "matched_at": "2026-09-01T07:44:43.346Z"
+      },
+      {
+        "id": "170aad41-33c3-4db2-8407-9e6dcc1f7510",
+        "alert_rule_id": "62200d28-892b-4eb2-a163-2a0c0635e20d",
+        "driver_id": "22222222-2222-4222-8222-222222222222",
+        "load_id": "fff9d3e4-c7f6-4a3a-aece-c439ae2ad7d6",
+        "seen": false,
+        "matched_at": "2026-09-02T03:18:43.346Z"
+      },
+      {
+        "id": "add21b9a-d670-4fb0-a095-1ea510bce6fd",
+        "alert_rule_id": "62200d28-892b-4eb2-a163-2a0c0635e20d",
+        "driver_id": "22222222-2222-4222-8222-222222222222",
+        "load_id": "83ed5d1c-4718-4b16-9c21-b148f81786ff",
+        "seen": true,
+        "matched_at": "2026-09-02T00:24:43.346Z"
       },
       {
         "id": "923ce90a-46fe-4b12-9a72-71da2a8386c0",
         "alert_rule_id": "62200d28-892b-4eb2-a163-2a0c0635e20d",
         "driver_id": "22222222-2222-4222-8222-222222222222",
-        "load_id": "0f2abc51-6312-41e7-8c26-3e26d597207a",
-        "seen": false,
-        "matched_at": "2026-09-01T14:44:18.747Z"
-      },
-      {
-        "id": "f7201141-e5a2-475a-a45b-dad100e221e9",
-        "alert_rule_id": "62200d28-892b-4eb2-a163-2a0c0635e20d",
-        "driver_id": "22222222-2222-4222-8222-222222222222",
-        "load_id": "e6cf0069-8ac6-4da4-8d07-e0c8cdd3c33f",
-        "seen": false,
-        "matched_at": "2026-09-01T19:56:18.747Z"
-      },
-      {
-        "id": "fd5e0a08-070b-4dd8-a078-d5de56037f99",
-        "alert_rule_id": "62200d28-892b-4eb2-a163-2a0c0635e20d",
-        "driver_id": "22222222-2222-4222-8222-222222222222",
-        "load_id": "df492891-b111-4e35-a7a8-8d0f6133e759",
-        "seen": true,
-        "matched_at": "2026-08-31T10:59:18.747Z"
-      },
-      {
-        "id": "1dd989d7-665b-4839-aab4-c6a1b2729f0a",
-        "alert_rule_id": "62200d28-892b-4eb2-a163-2a0c0635e20d",
-        "driver_id": "22222222-2222-4222-8222-222222222222",
-        "load_id": "438e55c1-011f-4390-9ce2-23339bbdab85",
-        "seen": false,
-        "matched_at": "2026-08-31T11:47:18.747Z"
-      },
-      {
-        "id": "0adc9460-59db-4912-87e6-50b94fa1db1f",
-        "alert_rule_id": "62200d28-892b-4eb2-a163-2a0c0635e20d",
-        "driver_id": "22222222-2222-4222-8222-222222222222",
-        "load_id": "fff9d3e4-c7f6-4a3a-aece-c439ae2ad7d6",
-        "seen": false,
-        "matched_at": "2026-09-01T16:15:18.747Z"
-      },
-      {
-        "id": "2a1bb201-5932-4985-823c-f43db73e276c",
-        "alert_rule_id": "62200d28-892b-4eb2-a163-2a0c0635e20d",
-        "driver_id": "22222222-2222-4222-8222-222222222222",
-        "load_id": "83ed5d1c-4718-4b16-9c21-b148f81786ff",
-        "seen": false,
-        "matched_at": "2026-09-01T14:03:18.747Z"
-      },
-      {
-        "id": "c4790446-870a-4489-b4f0-622bfc417b67",
-        "alert_rule_id": "62200d28-892b-4eb2-a163-2a0c0635e20d",
-        "driver_id": "22222222-2222-4222-8222-222222222222",
         "load_id": "e7dc60cb-ebdd-45cd-94d7-1be4cd25e7c3",
-        "seen": true,
-        "matched_at": "2026-09-01T11:22:18.747Z"
+        "seen": false,
+        "matched_at": "2026-09-01T15:25:43.346Z"
       }
     ],
     "subscription": {
@@ -548,6 +494,8 @@
       "hotel_budget": 110,
       "food_budget": 50,
       "transport_budget": 260,
+      "toll_per_mile": 0.03,
+      "other_per_load": 0,
       "max_expense_per_load": 750,
       "max_weekly_expense": 1800,
       "min_net_per_day": 650,
@@ -584,218 +532,194 @@
     ],
     "saved_plans": [
       {
-        "id": "e19ef8bd-178b-46ee-b8e6-1a5481aa5fea",
+        "id": "6fec4193-01b4-4303-91c2-b0e1d7c8898d",
         "driver_id": "33333333-3333-4333-8333-333333333333",
-        "name": "This week — out and back",
+        "name": "Maximum net",
         "load_ids": [
-          "e6cf0069-8ac6-4da4-8d07-e0c8cdd3c33f",
+          "3da5efd0-d93c-462d-93fd-2cb9d63992a0",
+          "a1ddec1f-e4cd-49fd-84c7-e7b9904d37df",
+          "d0698653-737f-43a4-b60d-3cd7db877db2",
           "63487997-aeb5-4e3c-a7b3-a6e31ef28290"
         ],
-        "projected_net": 2995.9,
-        "projected_expenses": 1389.1,
-        "days_used": 3.5
+        "projected_net": 3350.58,
+        "projected_expenses": 2164.42,
+        "days_used": 5.5
+      },
+      {
+        "id": "64b04780-2791-4323-b7ed-d8c1bdd5b8b9",
+        "driver_id": "33333333-3333-4333-8333-333333333333",
+        "name": "Lowest cost",
+        "load_ids": [
+          "3da5efd0-d93c-462d-93fd-2cb9d63992a0",
+          "a1ddec1f-e4cd-49fd-84c7-e7b9904d37df",
+          "d0698653-737f-43a4-b60d-3cd7db877db2",
+          "fa77bec2-52e8-4b61-a596-08d2298c95ec"
+        ],
+        "projected_net": 2933.2,
+        "projected_expenses": 2031.8,
+        "days_used": 5
       }
     ],
     "alert_hits": [
       {
-        "id": "5feb7c61-31e3-4844-bd34-540f6e339357",
+        "id": "f7201141-e5a2-475a-a45b-dad100e221e9",
         "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
         "driver_id": "33333333-3333-4333-8333-333333333333",
         "load_id": "0f2abc51-6312-41e7-8c26-3e26d597207a",
+        "seen": false,
+        "matched_at": "2026-09-01T20:37:43.346Z"
+      },
+      {
+        "id": "fd5e0a08-070b-4dd8-a078-d5de56037f99",
+        "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
+        "driver_id": "33333333-3333-4333-8333-333333333333",
+        "load_id": "883db71e-3c7f-4dbd-b3a0-afedee9f3129",
         "seen": true,
-        "matched_at": "2026-08-31T16:34:18.747Z"
+        "matched_at": "2026-08-31T11:40:43.346Z"
+      },
+      {
+        "id": "1dd989d7-665b-4839-aab4-c6a1b2729f0a",
+        "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
+        "driver_id": "33333333-3333-4333-8333-333333333333",
+        "load_id": "dc4b8f01-f717-4d18-87b9-4cdf1f4d4a2f",
+        "seen": false,
+        "matched_at": "2026-08-31T12:28:43.346Z"
+      },
+      {
+        "id": "0adc9460-59db-4912-87e6-50b94fa1db1f",
+        "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
+        "driver_id": "33333333-3333-4333-8333-333333333333",
+        "load_id": "88d5bae9-ed49-4b23-a6f6-51807943b7d1",
+        "seen": false,
+        "matched_at": "2026-09-01T16:56:43.346Z"
+      },
+      {
+        "id": "2a1bb201-5932-4985-823c-f43db73e276c",
+        "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
+        "driver_id": "33333333-3333-4333-8333-333333333333",
+        "load_id": "aae95de1-b773-4e06-8ba4-44f8928941fc",
+        "seen": false,
+        "matched_at": "2026-09-01T14:44:43.346Z"
+      },
+      {
+        "id": "c4790446-870a-4489-b4f0-622bfc417b67",
+        "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
+        "driver_id": "33333333-3333-4333-8333-333333333333",
+        "load_id": "df492891-b111-4e35-a7a8-8d0f6133e759",
+        "seen": true,
+        "matched_at": "2026-09-01T12:03:43.346Z"
+      },
+      {
+        "id": "5feb7c61-31e3-4844-bd34-540f6e339357",
+        "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
+        "driver_id": "33333333-3333-4333-8333-333333333333",
+        "load_id": "418f6d2f-ed65-4eda-973c-48db46581714",
+        "seen": true,
+        "matched_at": "2026-08-31T17:15:43.346Z"
       },
       {
         "id": "3382f682-e297-40ba-b5cf-1afa65f013ac",
         "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
         "driver_id": "33333333-3333-4333-8333-333333333333",
-        "load_id": "7870c757-c495-4011-b2ab-fe26e3fe8f15",
+        "load_id": "acfbb6a1-76a8-45f5-b9c2-6a5bb1c3654c",
         "seen": false,
-        "matched_at": "2026-09-01T23:27:18.747Z"
+        "matched_at": "2026-09-02T00:08:43.346Z"
       },
       {
         "id": "e6f706a1-bd1f-4720-bf86-ba57c292c547",
         "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
         "driver_id": "33333333-3333-4333-8333-333333333333",
-        "load_id": "883db71e-3c7f-4dbd-b3a0-afedee9f3129",
+        "load_id": "11c8b8af-3cd9-46aa-89a2-73032f8864e8",
         "seen": false,
-        "matched_at": "2026-09-01T13:40:18.747Z"
+        "matched_at": "2026-09-01T14:21:43.346Z"
       },
       {
         "id": "3368541a-0084-4b9a-ae0d-7172b302e88a",
         "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
         "driver_id": "33333333-3333-4333-8333-333333333333",
-        "load_id": "dc4b8f01-f717-4d18-87b9-4cdf1f4d4a2f",
+        "load_id": "e7dc60cb-ebdd-45cd-94d7-1be4cd25e7c3",
         "seen": false,
-        "matched_at": "2026-08-31T08:19:18.747Z"
+        "matched_at": "2026-08-31T09:00:43.346Z"
       },
       {
         "id": "0f854099-66f1-4fe7-ad92-abec36c9a97a",
         "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
         "driver_id": "33333333-3333-4333-8333-333333333333",
-        "load_id": "ec9d67df-a87b-439d-9fd0-195bcb6ade6c",
+        "load_id": "d0698653-737f-43a4-b60d-3cd7db877db2",
         "seen": true,
-        "matched_at": "2026-08-31T08:53:18.747Z"
+        "matched_at": "2026-08-31T09:34:43.346Z"
       },
       {
         "id": "3ed5dcdf-ef76-4ddc-9702-69b0fe18694f",
         "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
         "driver_id": "33333333-3333-4333-8333-333333333333",
-        "load_id": "88d5bae9-ed49-4b23-a6f6-51807943b7d1",
+        "load_id": "c0ae89bf-b278-4454-a252-ec818cdd75db",
         "seen": false,
-        "matched_at": "2026-09-01T00:54:18.747Z"
+        "matched_at": "2026-09-01T01:35:43.346Z"
       },
       {
         "id": "ff1e6385-72f2-453d-aff1-b75ced16d0c3",
         "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
         "driver_id": "33333333-3333-4333-8333-333333333333",
-        "load_id": "aae95de1-b773-4e06-8ba4-44f8928941fc",
+        "load_id": "63487997-aeb5-4e3c-a7b3-a6e31ef28290",
         "seen": false,
-        "matched_at": "2026-09-01T06:55:18.747Z"
+        "matched_at": "2026-09-01T07:36:43.346Z"
       },
       {
         "id": "27831c0f-ce97-4fc0-92ec-e6ac115b330b",
         "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
         "driver_id": "33333333-3333-4333-8333-333333333333",
-        "load_id": "df492891-b111-4e35-a7a8-8d0f6133e759",
+        "load_id": "fa77bec2-52e8-4b61-a596-08d2298c95ec",
         "seen": true,
-        "matched_at": "2026-08-31T14:08:18.747Z"
+        "matched_at": "2026-08-31T14:49:43.346Z"
       },
       {
         "id": "95fe93a4-bf0d-497b-9925-1aeb2b20da77",
-        "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
-        "driver_id": "33333333-3333-4333-8333-333333333333",
-        "load_id": "418f6d2f-ed65-4eda-973c-48db46581714",
-        "seen": true,
-        "matched_at": "2026-09-02T01:58:18.747Z"
-      },
-      {
-        "id": "88f6fc90-5cdf-401e-81fb-2431205348a8",
-        "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
-        "driver_id": "33333333-3333-4333-8333-333333333333",
-        "load_id": "a1ddec1f-e4cd-49fd-84c7-e7b9904d37df",
-        "seen": true,
-        "matched_at": "2026-09-01T02:04:18.747Z"
-      },
-      {
-        "id": "63cab1dc-5dcb-4bed-b66a-e2683026e470",
-        "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
-        "driver_id": "33333333-3333-4333-8333-333333333333",
-        "load_id": "80d755eb-11a4-4a9f-824b-3586b34616cb",
-        "seen": true,
-        "matched_at": "2026-08-31T16:24:18.747Z"
-      },
-      {
-        "id": "d1c5fe9d-4e0a-4edc-ab5d-306b9a52e5ed",
-        "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
-        "driver_id": "33333333-3333-4333-8333-333333333333",
-        "load_id": "acfbb6a1-76a8-45f5-b9c2-6a5bb1c3654c",
-        "seen": true,
-        "matched_at": "2026-09-01T02:48:18.747Z"
-      },
-      {
-        "id": "fb6ddbcd-4584-40a2-bd44-b2a4ce3fcd27",
-        "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
-        "driver_id": "33333333-3333-4333-8333-333333333333",
-        "load_id": "11c8b8af-3cd9-46aa-89a2-73032f8864e8",
-        "seen": true,
-        "matched_at": "2026-08-31T18:11:18.747Z"
-      },
-      {
-        "id": "e182749a-7fb3-4502-a4eb-ecba2ef5edc5",
-        "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
-        "driver_id": "33333333-3333-4333-8333-333333333333",
-        "load_id": "e7dc60cb-ebdd-45cd-94d7-1be4cd25e7c3",
-        "seen": false,
-        "matched_at": "2026-09-01T10:24:18.747Z"
-      },
-      {
-        "id": "e5d8d371-a3dd-4054-b179-7978c455abc1",
-        "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
-        "driver_id": "33333333-3333-4333-8333-333333333333",
-        "load_id": "d0698653-737f-43a4-b60d-3cd7db877db2",
-        "seen": true,
-        "matched_at": "2026-09-02T00:28:18.747Z"
-      },
-      {
-        "id": "c3734f0d-8a18-4968-9bee-6e8f9371fef2",
-        "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
-        "driver_id": "33333333-3333-4333-8333-333333333333",
-        "load_id": "c0ae89bf-b278-4454-a252-ec818cdd75db",
-        "seen": true,
-        "matched_at": "2026-09-01T20:13:18.747Z"
-      },
-      {
-        "id": "89d248a7-6cac-4c71-b0ed-ed146a9fe6fe",
-        "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
-        "driver_id": "33333333-3333-4333-8333-333333333333",
-        "load_id": "63487997-aeb5-4e3c-a7b3-a6e31ef28290",
-        "seen": true,
-        "matched_at": "2026-09-01T12:40:18.747Z"
-      },
-      {
-        "id": "9301b433-0381-42b0-91d7-c8898d664b04",
-        "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
-        "driver_id": "33333333-3333-4333-8333-333333333333",
-        "load_id": "fa77bec2-52e8-4b61-a596-08d2298c95ec",
-        "seen": true,
-        "matched_at": "2026-09-01T03:13:18.747Z"
-      },
-      {
-        "id": "27916323-47ed-48c1-9dd5-b8b9e4e8b072",
-        "alert_rule_id": "fed6217e-e8f6-40be-b606-35c6bea8aa38",
-        "driver_id": "33333333-3333-4333-8333-333333333333",
-        "load_id": "1b940bf1-3925-4eaa-8707-5e521898f284",
-        "seen": false,
-        "matched_at": "2026-09-01T23:31:18.747Z"
-      },
-      {
-        "id": "f565439b-8360-4981-9b83-7c9a70428887",
         "alert_rule_id": "a1f8a9f9-69b4-463d-bf9a-9d0ef2807769",
         "driver_id": "33333333-3333-4333-8333-333333333333",
         "load_id": "883db71e-3c7f-4dbd-b3a0-afedee9f3129",
-        "seen": false,
-        "matched_at": "2026-08-31T06:27:18.747Z"
+        "seen": true,
+        "matched_at": "2026-09-02T02:39:43.346Z"
       },
       {
-        "id": "570621f8-467e-4172-be8f-cbc0de04a53b",
+        "id": "88f6fc90-5cdf-401e-81fb-2431205348a8",
         "alert_rule_id": "a1f8a9f9-69b4-463d-bf9a-9d0ef2807769",
         "driver_id": "33333333-3333-4333-8333-333333333333",
         "load_id": "df492891-b111-4e35-a7a8-8d0f6133e759",
-        "seen": false,
-        "matched_at": "2026-09-02T02:35:18.747Z"
+        "seen": true,
+        "matched_at": "2026-09-01T02:45:43.346Z"
       },
       {
-        "id": "78ec4448-5aa9-46b4-a96f-a1d3bd800801",
+        "id": "63cab1dc-5dcb-4bed-b66a-e2683026e470",
         "alert_rule_id": "a1f8a9f9-69b4-463d-bf9a-9d0ef2807769",
         "driver_id": "33333333-3333-4333-8333-333333333333",
         "load_id": "418f6d2f-ed65-4eda-973c-48db46581714",
-        "seen": false,
-        "matched_at": "2026-08-31T03:58:18.747Z"
+        "seen": true,
+        "matched_at": "2026-08-31T17:05:43.346Z"
       },
       {
-        "id": "be825b64-8284-4834-b05b-8aa0d0884399",
+        "id": "d1c5fe9d-4e0a-4edc-ab5d-306b9a52e5ed",
         "alert_rule_id": "a1f8a9f9-69b4-463d-bf9a-9d0ef2807769",
         "driver_id": "33333333-3333-4333-8333-333333333333",
         "load_id": "e7dc60cb-ebdd-45cd-94d7-1be4cd25e7c3",
-        "seen": false,
-        "matched_at": "2026-09-01T00:26:18.747Z"
+        "seen": true,
+        "matched_at": "2026-09-01T03:29:43.346Z"
       },
       {
-        "id": "e0ec9e50-ee7d-41f8-bae4-0fd72829f81f",
+        "id": "fb6ddbcd-4584-40a2-bd44-b2a4ce3fcd27",
         "alert_rule_id": "a1f8a9f9-69b4-463d-bf9a-9d0ef2807769",
         "driver_id": "33333333-3333-4333-8333-333333333333",
         "load_id": "23ab3893-7dac-4eeb-a679-3993e77f80a7",
-        "seen": false,
-        "matched_at": "2026-09-01T04:51:18.747Z"
+        "seen": true,
+        "matched_at": "2026-08-31T18:52:43.346Z"
       },
       {
-        "id": "dc37f4b2-d7b3-479d-a99d-7189245cb192",
+        "id": "e182749a-7fb3-4502-a4eb-ecba2ef5edc5",
         "alert_rule_id": "a1f8a9f9-69b4-463d-bf9a-9d0ef2807769",
         "driver_id": "33333333-3333-4333-8333-333333333333",
         "load_id": "63487997-aeb5-4e3c-a7b3-a6e31ef28290",
-        "seen": true,
-        "matched_at": "2026-09-01T06:43:18.747Z"
+        "seen": false,
+        "matched_at": "2026-09-01T11:05:43.346Z"
       }
     ],
     "subscription": null

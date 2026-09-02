@@ -136,14 +136,14 @@ function render() {
             <button class="chip" data-filter="backhaulOnly" aria-pressed="${f.backhaulOnly}">Backhauls</button>
             <span class="muted">${rows.length} shown</span>
           </div>
-          <table class="board">
+          <div class="table-wrap"><table class="board">
             <thead><tr>
               <th></th><th>Route</th><th class="hide-m">Pickup</th><th class="r">Miles</th><th class="r hide-m">DH</th><th class="r">Pay</th><th class="r">Net</th><th class="r">Net/day</th><th>Match</th>
             </tr></thead>
             <tbody>
               ${rows.length ? rows.map(({ load, m }) => renderRow(load, m)).join("") : `<tr><td colspan="9" class="empty">Nothing matches these filters. Loosen the score or turn off a filter.</td></tr>`}
             </tbody>
-          </table>
+          </table></div>
         </section>
 
         <aside class="rail">

@@ -119,7 +119,8 @@ button { cursor: pointer; }
 .chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: #fff; }
 
 /* ---------------------------------------------------------------- board */
-.board { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+.table-wrap { overflow-x: auto; }
+.board { width: 100%; min-width: 640px; border-collapse: collapse; font-size: 13.5px; }
 .board th { text-align: left; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); font-weight: 600; padding: 8px 10px; border-bottom: 1px solid var(--rule); white-space: nowrap; }
 .board th.r, .board td.r { text-align: right; }
 .board td { padding: 8px 10px; border-bottom: 1px solid var(--rule-2); vertical-align: top; }
@@ -201,6 +202,8 @@ button { cursor: pointer; }
 
 @media (max-width: 980px) {
   .cols { grid-template-columns: 1fr; }
+  .highway .total { display: none; }
+  .board { min-width: 560px; }
   .rail { position: static; }
   .masthead { flex-wrap: wrap; }
   .drivers { margin-left: 0; width: 100%; overflow-x: auto; }

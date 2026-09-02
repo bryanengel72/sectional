@@ -55,7 +55,7 @@ const CITIES = {
 } as const;
 type City = keyof typeof CITIES;
 const TERMINALS: City[] = ["Kansas City", "Dallas", "Denver", "Chicago", "Indianapolis", "Oklahoma City", "Atlanta", "St. Louis", "Houston", "Memphis"];
-const HOMES: City[] = ["Kansas City", "Dallas", "Denver"];
+const HOMES: City[] = ["Atlanta", "Dallas", "Denver"];
 
 function roadMiles(a: City, b: City): number {
   const [, la1, lo1] = CITIES[a]; const [, la2, lo2] = CITIES[b];
@@ -150,6 +150,24 @@ for (let i = 0; i < 78; i++) {
     },
   });
 }
+// The brief's own worked example (section 6): Atlanta -> Dallas -> Chicago -> Atlanta,
+// priced so the chain lands near its projected ~$3,300 net in four days.
+const featured: Array<[City, City, number, number, number, number, string, string]> = [
+  // origin, dest, miles, deadhead, pay, est_days, vehicle, customer
+  ["Atlanta", "Dallas", 780, 20, 1650, 1.5, "2024 Freightliner Cascadia", "Penske"],
+  ["Dallas", "Chicago", 925, 30, 1900, 1.5, "2024 Peterbilt 579", "Rush Truck Centers"],
+  ["Chicago", "Atlanta", 715, 15, 1250, 1, "2023 Volvo VNL 860", "Ryder"],
+];
+featured.forEach(([origin, dest, miles, dh, pay, days, vehicle, customer], i) => {
+  loads.push({
+    id: uuid(), source: "manual", order_number: `DA-${1001 + i}`, status: "available", cdl_required: true,
+    terminal: `${origin} Terminal`, origin_city: origin, origin_state: CITIES[origin][0], dest_city: dest, dest_state: CITIES[dest][0],
+    load_date: iso(1 + i * 2), day_offset: 1 + i * 2, miles, deadhead_miles: dh, towable: true, pay, est_days: days,
+    return_cost_estimate: 0, is_backhaul: dest === "Atlanta",
+    raw_payload: { vehicle, unit: `PNK-${41000 + i}`, customer, cdl_class: "A", pickup_window: "07:00-10:00", notes: i === 2 ? "Fuel card provided" : "" },
+  });
+});
+
 loads.sort((a, b) => a.day_offset - b.day_offset || a.origin_city.localeCompare(b.origin_city));
 
 // ------------------------------------------------------------ drivers ----
@@ -163,8 +181,8 @@ interface DemoDriver {
 
 const drivers: DemoDriver[] = [
   {
-    id: "11111111-1111-4111-8111-111111111111", email: "marcus@sectional.demo", password: "sectional-demo",
-    profile: { ...PROFILE_DEFAULTS, display_name: "Marcus Bell", starting_location: "Kansas City, MO", cdl_class: "A", towable: true,
+    id: "11111111-1111-4111-8111-111111111111", email: "edward@sectional.demo", password: "sectional-demo",
+    profile: { ...PROFILE_DEFAULTS, display_name: "Edward Senter", starting_location: "Atlanta, GA", cdl_class: "A", towable: true,
       mpg: 9.5, fuel_type: "diesel", hotel_budget: 95, food_budget: 45, transport_budget: 200, max_expense_per_load: 650,
       max_weekly_expense: 1400, min_net_per_day: 750, min_net_per_load: 400, min_net_per_mile: 0.75, max_deadhead_pct: 15,
       preferred_min_miles: 250, preferred_max_miles: 900 },

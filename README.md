@@ -79,7 +79,7 @@ Demo logins (password `sectional-demo` for all):
 
 | Driver | Home | Setup | Shows off |
 |---|---|---|---|
-| marcus@sectional.demo | Kansas City, MO | CDL-A, tows | The brief's worked example ($3,000 in 4 days): planner recommends 4 days, goal met. Pay/mile, backhaul, and goal alerts, Pro subscription |
+| edward@sectional.demo | Atlanta, GA | CDL-A, tows | The brief's worked example (Atlanta, $3,000 in 4 days). Pay/mile, backhaul, and goal alerts, Pro subscription |
 | dee@sectional.demo | Dallas, TX | No CDL, tows, unleaded van | CDL hard-fails on the big trucks, origin-radius alerts for TX/OK, trial subscription |
 | rob@sectional.demo | Denver, CO | CDL-B, does not tow | Return-transport costs biting into net, long-run chains |
 

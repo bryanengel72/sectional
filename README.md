@@ -42,6 +42,8 @@ CSV import that runs the same normalizer and alert rules the Edge Functions use.
 cd web && npm install && npm run dev      # http://localhost:5180
 ```
 
+Live at https://sectional-ten.vercel.app; every push to `main` deploys there.
+
 Switch drivers with the buttons in the masthead. Drop `sample-data/terminal-board.csv`
 on "Import board (CSV)" to watch new loads land and alerts fire. When the
 hosted Supabase project exists, the JSON imports in `web/src/main.ts` are the

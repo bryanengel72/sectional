@@ -183,7 +183,7 @@ const drivers: DemoDriver[] = [
   {
     id: "11111111-1111-4111-8111-111111111111", email: "edward@sectional.demo", password: "sectional-demo",
     profile: { ...PROFILE_DEFAULTS, display_name: "Edward Senter", starting_location: "Atlanta, GA", cdl_class: "A", towable: true,
-      mpg: 9.5, fuel_type: "diesel", hotel_budget: 95, food_budget: 45, transport_budget: 200, max_expense_per_load: 650,
+      mpg: 11, fuel_type: "diesel", hotel_budget: 95, food_budget: 45, transport_budget: 200, max_expense_per_load: 650,
       max_weekly_expense: 1400, min_net_per_day: 750, min_net_per_load: 400, min_net_per_mile: 0.75, max_deadhead_pct: 15,
       preferred_min_miles: 250, preferred_max_miles: 900 },
     goal: { id: uuid(), weekly_net_goal: 3000, days_available: 4 },   // the worked example from the brief

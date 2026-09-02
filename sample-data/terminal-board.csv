@@ -1,0 +1,47 @@
+Order #,Status,Vehicle,Customer,CDL,Terminal,Pickup City,Pickup State,Delivery City,Delivery State,Pickup Date,Loaded Miles,DH,Tow,Rate,Days,Return Cost,Backhaul,Notes
+DA-426,PENDING,2024 Ford F-650 box truck,U-Haul,B,Chicago Terminal,Chicago,IL,Kansas City,MO,2026-09-02,491,38,Y,$795,1,,N,Fuel card provided
+DA-489,AVAILABLE,2024 Peterbilt 579,Rush Truck Centers,A,Dallas Terminal,Dallas,TX,Tulsa,OK,2026-09-02,282,1,Y,$750,1,,N,DOT inspection on file
+DA-443,AVAILABLE,2024 Mercedes Sprinter 2500,Hertz,NONE,Memphis Terminal,Memphis,TN,Minneapolis,MN,2026-09-02,833,44,N,"$2,320",1.5,,N,
+DA-480,AVAILABLE,2023 Thor Four Winds 28A,General RV,NONE,Memphis Terminal,Memphis,TN,Dallas,TX,2026-09-02,500,19,N,"$1,120",1,221,N,Keys at guard shack
+DA-428,AVAILABLE,2024 Freightliner Cascadia,Ryder,A,Dallas Terminal,Dallas,TX,Denver,CO,2026-09-03,788,12,Y,"$1,995",1.5,,N,
+DA-422,AVAILABLE,2024 Hino L6 box truck,Enterprise Truck Rental,B,Denver Terminal,Denver,CO,Oklahoma City,OK,2026-09-03,600,111,Y,$995,1.5,,N,
+DA-441,AVAILABLE,2023 Volvo VNL 860,Penske,A,Houston Terminal,Houston,TX,Dallas,TX,2026-09-03,268,108,N,$660,1,250,Y,
+DA-436,PENDING,2024 International LT,Ryder,A,Memphis Terminal,Memphis,TN,Dallas,TX,2026-09-03,500,36,Y,"$1,375",1,,Y,
+DA-434,AVAILABLE,2024 Hino L6 box truck,Enterprise Truck Rental,B,St. Louis Terminal,St. Louis,MO,Kansas City,MO,2026-09-03,283,22,Y,$675,1,,Y,Call dispatch 30 min out
+DA-439,AVAILABLE,2024 Ford F-650 box truck,Enterprise Truck Rental,B,St. Louis Terminal,St. Louis,MO,Kansas City,MO,2026-09-03,283,46,N,$550,1,134,Y,
+DA-481,AVAILABLE,2024 Hino L6 box truck,Enterprise Truck Rental,B,Chicago Terminal,Chicago,IL,Tulsa,OK,2026-09-04,712,5,N,"$1,445",1.5,,N,
+DA-437,AVAILABLE,2023 Isuzu NPR-HD,Enterprise Truck Rental,B,Dallas Terminal,Dallas,TX,Denver,CO,2026-09-04,788,10,N,"$2,015",1.5,,Y,Fuel card provided
+DA-470,PENDING,2024 International LT,Navistar Fleet,A,Houston Terminal,Houston,TX,Indianapolis,IN,2026-09-04,1030,38,Y,"$2,435",2,,N,Call dispatch 30 min out
+DA-474,AVAILABLE,2024 Hino L6 box truck,Ryder,B,Memphis Terminal,Memphis,TN,St. Louis,MO,2026-09-04,286,47,Y,$795,1,,N,Fuel card provided
+DA-447,AVAILABLE,2024 International LT,Navistar Fleet,A,Oklahoma City Terminal,Oklahoma City,OK,Albuquerque,NM,2026-09-04,613,5,N,"$1,740",1.5,245,N,No weekend delivery
+DA-455,AVAILABLE,2023 Thor Four Winds 28A,General RV,NONE,Denver Terminal,Denver,CO,Albuquerque,NM,2026-09-05,398,4,N,$930,1,327,N,Fuel card provided
+DA-469,AVAILABLE,2024 Ford Transit 350 cargo,Enterprise Truck Rental,NONE,Houston Terminal,Houston,TX,San Antonio,TX,2026-09-05,225,32,N,$485,1,299,N,DOT inspection on file
+DA-460,AVAILABLE,2024 Ford Transit 350 cargo,Amazon DSP,NONE,Kansas City Terminal,Kansas City,MO,Tulsa,OK,2026-09-05,259,12,Y,$570,1,,N,No weekend delivery
+DA-462,AVAILABLE,2024 Ford Transit 350 cargo,Amazon DSP,NONE,Kansas City Terminal,Kansas City,MO,Columbus,OH,2026-09-05,737,14,N,"$1,410",1.5,266,N,Fuel card provided
+DA-465,AVAILABLE,2024 Ford F-350 service body,Enterprise Truck Rental,NONE,Kansas City Terminal,Kansas City,MO,Phoenix,AZ,2026-09-05,1246,27,N,"$3,285",2.5,228,N,Keys at guard shack
+DA-421,PENDING,2024 Winnebago View 24D,La Mesa RV,NONE,Oklahoma City Terminal,Oklahoma City,OK,Salt Lake City,UT,2026-09-05,1025,17,Y,"$2,295",2,,N,
+DA-431,AVAILABLE,2024 Ford Transit 350 cargo,Amazon DSP,NONE,Denver Terminal,Denver,CO,Dallas,TX,2026-09-06,788,84,Y,"$2,100",1.5,,N,
+DA-488,AVAILABLE,2024 Ford F-350 service body,Sunbelt Rentals,NONE,Houston Terminal,Houston,TX,Dallas,TX,2026-09-06,268,5,N,$580,1,198,N,No weekend delivery
+DA-442,AVAILABLE,2024 Hino L6 box truck,Ryder,B,Indianapolis Terminal,Indianapolis,IN,San Antonio,TX,2026-09-06,1190,14,Y,"$2,090",2.5,,N,Keys at guard shack
+DA-478,AVAILABLE,2023 Volvo VNL 860,Ryder,A,Oklahoma City Terminal,Oklahoma City,OK,Minneapolis,MN,2026-09-06,826,10,Y,"$2,700",1.5,,N,Fuel card provided
+DA-444,AVAILABLE,2024 Freightliner Cascadia,Rush Truck Centers,A,Dallas Terminal,Dallas,TX,Charlotte,NC,2026-09-07,1105,156,Y,"$2,310",2.5,,N,Call dispatch 30 min out
+DA-458,AVAILABLE,2023 Thor Four Winds 28A,General RV,NONE,Denver Terminal,Denver,CO,Minneapolis,MN,2026-09-07,831,26,N,"$2,170",1.5,320,N,
+DA-457,AVAILABLE,2023 Thor Four Winds 28A,General RV,NONE,Houston Terminal,Houston,TX,Dallas,TX,2026-09-07,268,19,Y,$630,1,,Y,Keys at guard shack
+DA-484,AVAILABLE,2024 Ford Transit 350 cargo,Enterprise Truck Rental,NONE,Kansas City Terminal,Kansas City,MO,Denver,CO,2026-09-07,663,53,Y,"$1,685",1.5,,Y,No weekend delivery
+DA-430,AVAILABLE,2024 Freightliner Cascadia,Penske,A,Oklahoma City Terminal,Oklahoma City,OK,Cincinnati,OH,2026-09-07,901,15,Y,"$1,375",2,,N,No weekend delivery
+DA-433,AVAILABLE,2024 Mercedes Sprinter 2500,Hertz,NONE,Chicago Terminal,Chicago,IL,Kansas City,MO,2026-09-08,491,35,N,$880,1,304,Y,DOT inspection on file
+DA-429,ASSIGNED,2024 Ford F-650 box truck,Enterprise Truck Rental,B,Houston Terminal,Houston,TX,Des Moines,IA,2026-09-08,980,24,N,"$1,700",2,,N,No weekend delivery
+DA-477,AVAILABLE,2024 Hino L6 box truck,Ryder,B,Houston Terminal,Houston,TX,Oklahoma City,OK,2026-09-08,492,40,Y,$765,1,,N,DOT inspection on file
+DA-440,AVAILABLE,2023 Volvo VNL 860,Penske,A,Dallas Terminal,Dallas,TX,Des Moines,IA,2026-09-09,754,17,Y,"$2,125",1.5,,N,
+DA-427,AVAILABLE,2023 Ram ProMaster 3500,U-Haul,NONE,Houston Terminal,Houston,TX,Cincinnati,OH,2026-09-09,1062,7,Y,"$1,900",2,,N,
+DA-461,AVAILABLE,2024 Ford Transit 350 cargo,Amazon DSP,NONE,Indianapolis Terminal,Indianapolis,IN,Denver,CO,2026-09-09,1188,116,Y,"$2,780",2.5,,Y,
+DA-492,AVAILABLE,2023 Thor Four Winds 28A,General RV,NONE,Oklahoma City Terminal,Oklahoma City,OK,Dallas,TX,2026-09-09,227,108,N,$580,1,,Y,No weekend delivery
+DA-424,AVAILABLE,2024 Mercedes Sprinter 2500,Hertz,NONE,Houston Terminal,Houston,TX,Denver,CO,2026-09-10,1045,17,N,"$1,970",2,306,Y,
+DA-479,AVAILABLE,2024 Hino L6 box truck,Ryder,B,Kansas City Terminal,Kansas City,MO,Dallas,TX,2026-09-10,540,97,N,"$1,375",1,,N,
+DA-449,AVAILABLE,2023 Volvo VNL 860,Ryder,A,St. Louis Terminal,St. Louis,MO,Kansas City,MO,2026-09-10,283,27,N,$390,1,,Y,
+DA-432,AVAILABLE,2024 Peterbilt 579,Rush Truck Centers,A,Houston Terminal,Houston,TX,Denver,CO,2026-09-11,1045,25,Y,"$1,185",2,,Y,
+DA-418,AVAILABLE,2024 Winnebago View 24D,La Mesa RV,NONE,Indianapolis Terminal,Indianapolis,IN,Columbus,OH,2026-09-11,200,33,N,$390,1,,N,No weekend delivery
+DA-451,AVAILABLE,2024 Freightliner Cascadia,Rush Truck Centers,A,St. Louis Terminal,St. Louis,MO,Omaha,NE,2026-09-11,421,33,N,"$1,040",1,258,N,No weekend delivery
+DA-454,AVAILABLE,2024 Ford Transit 350 cargo,Enterprise Truck Rental,NONE,Indianapolis Terminal,Indianapolis,IN,Dallas,TX,2026-09-14,909,44,N,"$1,255",2,228,Y,Keys at guard shack
+DA-473,AVAILABLE,2024 International LT,Ryder,A,Houston Terminal,Houston,TX,Kansas City,MO,2026-09-15,770,35,Y,"$1,735",1.5,,Y,
+DA-435,AVAILABLE,2024 Mercedes Sprinter 2500,Amazon DSP,NONE,Memphis Terminal,Memphis,TN,Minneapolis,MN,2026-09-15,833,3,N,"$2,030",1.5,227,N,

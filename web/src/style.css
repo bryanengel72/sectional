@@ -184,6 +184,9 @@ button { cursor: pointer; }
 .plus { width: 26px; height: 26px; border-radius: 50%; border: 1px solid var(--ink-3); background: var(--card); font-weight: 700; font-size: 16px; line-height: 1; padding: 0; color: var(--blue); }
 .plus[aria-pressed="true"] { background: var(--blue); border-color: var(--blue); color: #fff; }
 
+.board-foot { display: flex; align-items: center; gap: 8px; padding: 10px 16px; border-top: 1px solid var(--rule-2); font-size: 13px; flex-wrap: wrap; }
+.board-foot .muted { flex: 1; }
+
 /* receipt drawer */
 .drawer td { background: var(--blue-tint) !important; padding: 0 10px 14px; }
 .receipt { display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 18px; background: var(--card); border: 1px dashed var(--rule); padding: 14px 16px; border-radius: var(--radius); }

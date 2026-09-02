@@ -36,12 +36,14 @@ const state = {
   plan: [] as string[],
   planLabel: "" as string,
   expanded: null as string | null,
+  boardLimit: 10,
   tab: "plan" as "plan" | "alerts" | "settings",
   filters: { minScore: 0, tier: "all" as "all" | "picks", backhaulOnly: false, availableOnly: true, sort: "score" as "score" | "date" | "net" | "netPerDay" | "pay" },
 };
 
 /* ---------------------------------------------------------------- helpers */
 const $ = (sel: string, root: ParentNode = document) => root.querySelector(sel) as HTMLElement;
+const BOARD_PAGE = 10;
 const money = (n: number) => (n < 0 ? "-" : "") + "$" + Math.abs(Math.round(n)).toLocaleString("en-US");
 const money2 = (n: number) => (n < 0 ? "-" : "") + "$" + Math.abs(n).toFixed(2);
 const esc = (s: unknown) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]!));
@@ -139,6 +141,11 @@ function render() {
       default: return y.m.score - x.m.score || y.m.economics.netPerDay - x.m.economics.netPerDay;
     }
   });
+  // Compact board: the first page, growing on demand. An opened load is always kept visible.
+  const expandedIdx = rows.findIndex((r) => r.load.id === state.expanded);
+  if (expandedIdx >= state.boardLimit) state.boardLimit = Math.ceil((expandedIdx + 1) / BOARD_PAGE) * BOARD_PAGE;
+  const visible = rows.slice(0, state.boardLimit);
+  const hidden = rows.length - visible.length;
   const picks = state.loads.filter((l) => l.status === "available").map((load) => ({ load, m: a.scored.get(load.id)! }))
     .filter(({ m }) => m.tier === "TOP_PICK" || m.tier === "GOOD").sort((x, y) => y.m.score - x.m.score).slice(0, 5);
 
@@ -206,9 +213,13 @@ function render() {
               <th></th><th>Route</th><th class="hide-m">Pickup</th><th class="r">Miles</th><th class="r hide-m">DH</th><th class="r">Pay</th><th class="r">Net</th><th class="r">Net/day</th><th>Match</th>
             </tr></thead>
             <tbody>
-              ${rows.length ? rows.map(({ load, m }) => renderRow(load, m, a)).join("") : `<tr><td colspan="9" class="empty">Nothing matches these filters. Loosen the score or turn off a filter.</td></tr>`}
+              ${rows.length ? visible.map(({ load, m }) => renderRow(load, m, a)).join("") : `<tr><td colspan="9" class="empty">Nothing matches these filters. Loosen the score or turn off a filter.</td></tr>`}
             </tbody>
           </table></div>
+          ${rows.length > BOARD_PAGE ? `<div class="board-foot">
+            <span class="muted">Showing ${visible.length} of ${rows.length}</span>
+            ${hidden > 0 ? `<button class="btn quiet small" data-more="page">Show ${Math.min(hidden, 20)} more</button><button class="btn quiet small" data-more="all">Show all ${rows.length}</button>` : `<button class="btn quiet small" data-more="less">Show first ${BOARD_PAGE}</button>`}
+          </div>` : ""}
         </section>
 
         <aside class="rail">
@@ -447,9 +458,14 @@ function toast(html: string) {
 /* ----------------------------------------------------------------- events */
 document.addEventListener("click", (ev) => {
   const t = ev.target as HTMLElement;
-  const btn = t.closest("[data-driver],[data-add],[data-filter],[data-tier],[data-tab],[data-open-plan],[data-strategy],[data-day],[data-open],#savePlan,#clearPlan,#markRead,tr.row") as HTMLElement | null;
+  const btn = t.closest("[data-driver],[data-add],[data-filter],[data-tier],[data-tab],[data-open-plan],[data-strategy],[data-day],[data-open],[data-more],#savePlan,#clearPlan,#markRead,tr.row") as HTMLElement | null;
   if (!btn) return;
-  if (btn.dataset.driver) { switchDriver(Number(btn.dataset.driver)); return render(); }
+  if (btn.dataset.driver) { switchDriver(Number(btn.dataset.driver)); state.boardLimit = BOARD_PAGE; return render(); }
+  if (btn.dataset.more) {
+    state.boardLimit = btn.dataset.more === "all" ? Infinity : btn.dataset.more === "less" ? BOARD_PAGE : state.boardLimit + 20;
+    if (btn.dataset.more === "less") { state.expanded = null; $(".board-panel")?.scrollIntoView({ block: "start", behavior: "smooth" }); }
+    return render();
+  }
   if (btn.dataset.add) {
     const id = btn.dataset.add;
     const ids = state.plan.includes(id) ? state.plan.filter((x) => x !== id) : [...state.plan, id];
@@ -465,8 +481,8 @@ document.addEventListener("click", (ev) => {
     if (row?.best) usePlan(row.best.loads.map((l) => (l as BoardLoad).id), `${row.days}-day plan`); state.tab = "plan"; return render();
   }
   if (btn.dataset.open) { state.expanded = btn.dataset.open; render(); $(`tr[data-load="${btn.dataset.open}"]`)?.scrollIntoView({ block: "center", behavior: "smooth" }); return; }
-  if (btn.dataset.filter) { const k = btn.dataset.filter as "backhaulOnly" | "availableOnly"; state.filters[k] = !state.filters[k]; return render(); }
-  if (btn.dataset.tier) { state.filters.tier = state.filters.tier === "picks" ? "all" : "picks"; return render(); }
+  if (btn.dataset.filter) { const k = btn.dataset.filter as "backhaulOnly" | "availableOnly"; state.filters[k] = !state.filters[k]; state.boardLimit = BOARD_PAGE; return render(); }
+  if (btn.dataset.tier) { state.filters.tier = state.filters.tier === "picks" ? "all" : "picks"; state.boardLimit = BOARD_PAGE; return render(); }
   if (btn.dataset.tab) { state.tab = btn.dataset.tab as typeof state.tab; return render(); }
   if (btn.dataset.openPlan) {
     const p = state.savedPlans.find((x) => x.id === btn.dataset.openPlan)!;
@@ -486,7 +502,7 @@ document.addEventListener("click", (ev) => {
 
 document.addEventListener("change", (ev) => {
   const t = ev.target as HTMLInputElement | HTMLSelectElement;
-  if (t.id === "sort") { state.filters.sort = t.value as typeof state.filters.sort; return render(); }
+  if (t.id === "sort") { state.filters.sort = t.value as typeof state.filters.sort; state.boardLimit = BOARD_PAGE; return render(); }
   if (t.dataset.set) {
     const k = t.dataset.set;
     if (k === "fuelPrice") state.fuelPrice = t.value === "" ? undefined : Number(t.value);
